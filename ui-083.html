@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ICONES -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./_css/style-global.css" />
+    <script type="text/javascript" src="_js/ui-083.js"></script>
+
+    <!--Adicione ao título o nome da sua página-->
+    <title>CIVA -Cadastro supervisor</title>
+  </head>
+  <body id="container-manager">
+    <div id="container-menu">
+      <div class="profile-info">
+        <!--Parte da foto e dados do usuário-->
+        <div class="photo-profile">
+          <img src="" alt="" />
+        </div>
+        <p class="name-user">Nome Sobrenome</p>
+        <p>Cargo</p>
+      </div>
+      <nav class="menu-sidebar">
+        <!--Opções do Menu-->
+        <ul>
+          <li class="item-menu active-item-menu">
+            <i></i><i></i>
+            <a href="ui-074.html" class="btn"
+              ><span class="material-icons-round">people_alt</span>Gerenciar
+              usuário</a
+            >
+          </li>
+          <li class="item-menu">
+            <i></i><i></i>
+            <a href="ui-093.html"
+              ><span class="material-icons-round">place</span>Gerenciar unidade</a
+            >
+          </li>
+          <li class="item-menu">
+            <i></i><i></i>
+            <a href="ui-096.html"
+              ><span class="material-icons-round">contact_page</span>Gerenciar
+              vacinação</a
+            >
+          </li>
+          <li class="item-menu">
+            <i></i><i></i>
+            <a href="ui-098.html"
+              ><span class="material-icons-round">assessment</span>Painel relatório</a
+            >
+          </li>
+          <li class="item-menu">
+            <i></i><i></i>
+            <a href="ui-099.html"
+              ><span class="material-icons-round">vaccines</span>Gerenciar vacina</a
+            >
+          </li>
+          <li class="item-menu">
+            <i></i><i></i>
+            <a href="ui-102.html"
+              ><span class="material-icons-round">account_circle</span>Perfil</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="container-main">
+      <!--Não excluir, pois isso modifica a formatação-->
+
+        <div id="wrapper-main">
+            <header class="container-header">
+            <h3>Cadastrar Supervisor</h3>
+            </header>
+
+            <div class="container-middle">
+                <div class="box-wrapper">
+                    <!-- CONTAINER CABEÇALHO -->
+                    <header class="box-header">Dados Supervisor</header>
+
+                    <!-- CONTAINER DO MEIO -->
+                    <form  id="cadastro-supervisor" class="box-middle box-middle-form">
+                        <div class="input-container">
+                            <label for="nome">Nome completo</label>
+                            <input
+                            type="text" id="nome"
+                            placeholder="Ex: Maria Souza Almeida"
+                            class="input-default"
+                            />
+                        </div>
+                        <div class="input-container">
+                            <label for="identidade">Identidade</label>
+                            <input
+                            type="text" id="identidade"
+                            placeholder="000.000.000-00"
+                            class="input-default"
+                            />
+                        </div>
+                        <div class="input-container">
+                            <label for="date-de-nascimento">Data de nascimento</label>
+                            <input type="date" placeholder="" class="input-default" id="date-de-nascimento" name="data de nascimento">
+                        </div>
+                        <div class="input-container">
+                            <label for="pais-de-origem">País de origem</label>
+                            <div class="select-default">
+                                <select id="pais-de-origem" >
+                                    <option value="" selected="" disabled="">Selecionar</option>
+                                    <option value="1">Item 1</option>
+                                    <option value="2">Item 2</option>
+                                    <option value="3">Item 3</option>
+                                </select>
+                                <span class="material-icons-round icon-select">expand_more</span>
+                            </div>
+                        </div>
+                        <div class="input-container max-width">
+                            <label for="id-ponto">ID Ponto</label>
+                            <input
+                            type="text" id="id-ponto"
+                            placeholder="Ex: 123456789"
+                            class="input-default max-width"
+                            />
+                        </div>
+
+                        <div class="input-container">
+                            <label for="email">Email</label>
+                            <input
+                            type="mail" id="email"
+                            placeholder="Ex: nome@mail.com"
+                            class="input-default"
+                            />
+                        </div>
+                        <div class="input-container">
+                            <label for="contato">Contato</label>
+                            <input
+                            type="text" id="contato"
+                            placeholder="Ex: 55+91234-5678"
+                            class="input-default"
+                            />
+                        </div>
+
+                        <div class="input-container">
+                            <label for="senha">Senha</label>
+                            <input
+                            type="password" id="senha"
+                            placeholder="***************"
+                            class="input-default"
+                            />
+                        </div>
+
+                        <div class="input-container">
+                            <label for="confirma-senha">Confirmação</label>
+                            <input
+                            type="password" id="confirma-senha"
+                            placeholder="***************"
+                            class="input-default"
+                            />
+                        </div>
+                    </form>
+                </div>
+            </div>
+ 
+            <div class="container-bottom">
+                <a href="ui-082.html"><button class="btn-default  d-grey">Voltar</button></a>
+                <button type="submit" form="cadastro-supervisor" class="btn-default d-coral">Cadastrar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="_assets/ui-029_favicon_managers.svg" type="image/x-icon">
+    <link rel="stylesheet" href="_css/ui-029.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet">
+    <title>CIVA - Painel Portador CIVA</title>
+</head>
+<body id="container-manager">
+
+    <div id="container-menu">
+        <div class="profile-info">
+            <div class="photo-profile">
+            <img src="_assests/ui-029_default_user.svg" alt="">
+            </div>
+            <p class="name-user">Nome Sobrenome</p>
+            <p>Cargo</p>
+        </div>
+        <nav class="menu-sidebar">
+            <ul>
+                <li class="item-menu active-item-menu"><i></i><i></i>
+                    <a href="#" class="btn"><span class="material-icons-round">people_alt</span>Gerenciar usuário</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-035.html"><span class="material-icons-round">contact_page</span>Gerenciar vacinação</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-037.html"><span class="material-icons-round">assessment</span>Painel relatório</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-038.html"><span class="material-icons-round">account_circle</span>Perfil</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="container-main">
+     <div id="wrapper-main">
+        
+        <header class="container-header">
+            <h3>Painel Portador CIVA</h3>
+        </header>
+    
+        <!-- CONTAINER MIDDLE -->
+        <div class="container-middle">
+            <div class="box-container">
+                <!-- BOX LEFT -->
+                <div class="box-wrapper">
+             
+                    <header class="box-header">Dados Portador CIVA</header>
+ 
+                <form class="box-middle box-middle-form" id="form-panel-portadorciva">
+                
+                    <div class="input-container">
+                
+                        <label for="">Nome completo</label>
+                        <input type="text" class="input-default" value="Maria Souza Almeida" id="name-complet">
+                    </div>
+                
+                    <div class="input-container">
+                        <label for="">Número CIVA</label>
+                        <input type="text" class="input-default" value="BR5513456789" disabled>
+                    </div>
+                
+                    <div class="input-container">
+                        <label for="">Data de nascimento</label>
+                        <input type="date" class="input-default" value="2021-07-29" id="date-birth">
+                    </div>
+                
+                    <div class="input-container">
+                        <label for="">Identidade</label>
+                        <input type="text" class="input-default" value="123.456.789.01" id="identify">
+                    </div>
+                    
+                    <div class="input-container">
+                        <label for="">Endereço</label>
+                        <input type="text" class="input-default" value="Avenida Rio Branco" id="adress">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">País de origem</label>
+                        <input type="text" class="input-default" value="Brasil" id="country">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Email</label>
+                        <input type="mail" class="input-default" value="maria@gmail.com" id="email">
+                    </div>
+                
+                    <div class="input-container">
+                        <label for="">Contato</label>
+                        <input type="text" class="input-default" value="5521912345678" id="contact">
+                    </div>
+
+                </form>
+                    <div class="box-bottom">
+                        <div class="toggle-container">
+                            <div class="toggle-btn">
+                                <div class="inner-circle"></div>
+                                <span class="toggle-name">Ativado</span>
+                            </div> 
+                            </div>
+                            <button class="btn-default btn-small d-grey-out" style="width: initial;">Redefinir senha</button>
+                            <button id="excluir" class="btn-default btn-small d-red">Excluir</button>
+                    </div>
+                </div>
+                
+                    <!-- BOX RIGHT -->
+                    <div class="box-wrapper">
+                        <header class="box-header">Histórico de Vacinas</header>
+                        <div class="box-middle box-middle-table">
+                            <table class="table-default">
+                                <tbody><tr>
+                                    <th>Nome</th>
+                                    <th>Fabricante</th>
+                                    <th>Dose</th>
+                                    <th>País</th>
+                                    <th>Data</th>
+                                </tr>
+                                <tr>
+                                    <td>Coronavac</td>
+                                    <td>Butantan</td>
+                                    <td>1° Dose</td>
+                                    <td>Brasil</td>
+                                    <td>20/03/2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Coronavac</td>
+                                    <td>Butantan</td>
+                                    <td>1° Dose</td>
+                                    <td>Brasil</td>
+                                    <td>20/03/2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Coronavac</td>
+                                    <td>Butantan</td>
+                                    <td>1° Dose</td>
+                                    <td>Brasil</td>
+                                    <td>20/03/2021</td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                       
+                        <div class="box-bottom">
+                             
+                            <a href="ui-031.html"><button class="btn-default btn-small d-coral-out">Nova vacinação</button></a>
+                            <a href="ui-032.html"><button class="btn-default btn-small d-red">Adicionar dose</button></a>
+                            <a href="ui-030.html"><button class="btn-default btn-small d-green">Adicionar Certificado</button></a>
+                         
+                    </div>
+                
+                </div>
+                
+            </div>
+    
+     </div> 
+     <!-- BUTTONS -->
+     <div class="container-bottom">
+        <a href="ui-028.html"><button class="btn-default d-grey">Voltar</button></a>
+        <button id="salvar" class="btn-default d-coral" form="form-panel-portadorciva">Salvar</button>
+    </div>  
+    </div> 
+    
+     
+    <script src="_js/ui-029_toggle-botton.js"></script>
+    
+    </body>
+</html>

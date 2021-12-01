@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ICONES -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <!-- ESTILOS -->
+        <link rel="stylesheet" href="_css/style-global.css"> 
+        <link rel="stylesheet" href="_css/ui-041.css">
+        <script src="_js/ui-108.js"></script>
+
+    
+
+        <!--Adicione ao título o nome da sua página-->
+            <title>CIVA - Painel Unidade</title>
+    </head>
+    <body id="container-manager">
+        <div id="container-menu">
+
+            <div class="profile-info"><!--Parte da foto e dados do usuário-->
+                <div class="photo-profile">
+                    <img src="" alt="">
+                </div>
+                <p class="name-user">Nome Sobrenome</p>
+                <p>Cargo</p>
+            </div>
+            <nav class="menu-sidebar"> <!--Opções do Menu-->
+                <ul>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-043.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                    </li>
+                    <li class="item-menu "><i></i><i></i>
+                        <a href="ui-049.html"><span class="material-icons-round">place</span>Gerenciar unidade</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-051.html"><span class="material-icons-round">contact_page</span>Gerenciar vacinação</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-053.html"><span class="material-icons-round">assessment</span>Painel Relatório</a>
+                    </li>
+                    <li class="item-menu active-item-menu"><i></i><i></i>
+                        <a href="ui-054.html"><span class="material-icons-round">account_circle</span>Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div id="container-main"><!--Não excluir, pois isso modifica a formatação-->
+        
+            <div id="wrapper-main">
+
+                <header class="container-header">
+                    <h2>Painel Unidade</h2>
+                </header>
+
+                <div class="container-middle">
+                    <div class="box-wrapper">
+
+                        <!-- CONTAINER CABEÇALHO -->
+                            <header class="box-header">Meus dados</header>
+                        
+                        <!-- CONTAINER DO MEIO -->
+                        <form id="form1" class="box-middle box-middle-form">
+                            <div class="input-container">
+                        
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nome" placeholder="Rita Cadillac" class="input-default">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="civa">Número CIVA</label>
+                                <input type="text" id="civa" placeholder="BR55123456789" class="input-default">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="birthdate">Data de nascimento</label>
+                                <input type="text" id="birthdate" placeholder="01/01/2001" class="input-default">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="id">Identidade</label>
+                                <input type="text" id="id" placeholder="109.192.198-32" class="input-default">
+                            </div>
+
+
+                            <div class="input-container">
+                                <label for="homeland">País de Origem</label>
+                                <input type="text" id="homeland" placeholder="Brasil" class="input-default">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="position">Cargo</label>
+                                <input type="text" id="position" placeholder="Supervisor" class="input-default">
+                            </div>
+                            <div class="input-container">
+                                <label for="contato">Contato</label>
+                                <input type="text" id="contato" placeholder="5521912345678" class="input-default">
+                            </div>
+                            <div class="input-container">
+                                <label for="mail">E-mail</label>
+                                <input type="text" id="mail" placeholder="maria@gmail.com" class="input-default">
+                            </div>
+                        
+                            
+                        </form>                        
+                    </div>
+
+                        <div class="box-wrapper">
+                            <header class="box-header">Unidades Vincukadas</header>
+                            <div class="box-middle box-middle-table">
+                                <table class="table-default">
+                                    <tbody><tr>
+                                        <th>Nome</th>
+                                        <th>Estado</th>
+                                        <th>CEP</th>
+                                        <th>Identificador</th> 
+                                    </tr>
+                                    <tr>
+                                        <th>Hospital Pan</th>
+                                        <th>Rio de Janeiro</th>
+                                        <th>21450-000</th>
+                                        <th>215647</th> 
+                                    </tr>
+                                    <tr>
+                                        <th>Hospital Pan</th>
+                                        <th>Rio de Janeiro</th>
+                                        <th>21450-000</th>
+                                        <th>215647</th> 
+                                    </tr>
+                                    <tr>
+                                        <th>Hospital Pan</th>
+                                        <th>Rio de Janeiro</th>
+                                        <th>21450-000</th>
+                                        <th>215647</th> 
+                                    </tr>
+                                    <tr>
+                                        <th>Hospital Pan</th>
+                                        <th>Rio de Janeiro</th>
+                                        <th>21450-000</th>
+                                        <th>215647</th> 
+                                    </tr>
+                                    <tr>
+                                        <th>Hospital Pan</th>
+                                        <th>Rio de Janeiro</th>
+                                        <th>21450-000</th>
+                                        <th>215647</th> 
+                                    </tr>
+                                    
+                                </tbody></table>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="container-bottom">
+                    <button class="btn-default  d-grey">Voltar</button>
+                    <button type="submit" form="form1" class="btn-default  d-coral">Salvar</button>
+                </div> 
+
+
+
+            </div> 
+        </div>
+         
+    </body>
+</html>

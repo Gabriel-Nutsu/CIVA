@@ -1,0 +1,565 @@
+/* RESET-STYLE.CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+ 
+
+  
+*{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    font-style: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background: none;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    color: #133C55;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+
+p{
+    font-size: 14px;   
+}
+
+h1{
+    font-size: 51px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* COLORS BUTTONS */
+.d-blue{
+    background-color: #00A4FF;
+    color: white;
+}
+.d-blue:hover{
+    background-color: #5CC5FF;
+    transition: 0.5s;
+}
+.d-blue:active{
+    background-color: #008FDE;
+    transition: 0.5s;
+}
+
+
+.d-blue-out{
+    background-color: white;
+    border: 1px solid #00A4FF;
+    color: #00A4FF;
+}
+.d-blue-out:hover{
+    background-color: #EBF8FF;
+}
+.d-blue-out:active{
+    background-color: #D2EFFF;
+}
+
+.d-grey-out{
+    background-color: white;
+    border: 1px solid #606060;
+    color: #606060;
+}
+.d-grey-out:hover{
+    background-color: #F3F3F3;
+}
+.d-grey-out:active{
+    background-color: #E1E1E1;
+}
+.d-grey{
+    background-color: #EEEEEE;
+    color: #606060;
+}
+.d-grey:hover{
+    background-color: #E7E7E7;
+}
+.d-grey:active{
+    background-color: #D6D6D6;
+}
+
+
+/* BUTTONS */
+
+
+.btn-default{
+    padding: 0px 10px;
+    height: 40px;
+    width: 305px;    
+    border-radius: 7px;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 600;
+    user-select: none;
+}
+.btn-qr-code{
+    width: 120px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 64px;
+    cursor: pointer;
+}
+
+
+/* INPUTS */
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+.input-container > label{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.input-default{
+    height: 40px;
+    width: 200px;
+    border-radius: 7px;
+    font-size: 14px;
+    border: 1px solid #DFDFDF;
+    padding-left:  14px ;
+    padding-right:  14px ;
+}
+.input-default::placeholder{
+    color: #B5B5B5;
+    font-size: 14px;
+ 
+}
+
+
+.input-default:disabled{
+    background-color: #E8E8E8;
+}
+
+/* LAYOUT-STYLE.CSS */
+/* LAYOUT GERENCIAMENTO */
+#container_manager{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "sidebar main";
+    grid-template-rows: 1fr;
+    grid-template-columns: 500px 1fr;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* MENU  */
+
+#container_manager #container_menu{
+    grid-area: sidebar;
+    background-color: #00A4FF;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+/* CONTEUDO PRINCIPAL */
+
+#container_manager #container_main{
+    grid-area: main;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container_manager #wrapper_main{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    max-width: 1075px;
+}
+#container_welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* MENU BEM VINDO*/
+.welcome{
+    width: 304px;
+}
+.welcome h1{
+    font-size: 3.1rem;
+}
+.welcome p{
+    padding-bottom: 80px;
+    font-size: 2.125rem;
+}
+.welcome label{
+    font-size: 0.75rem;
+}
+.welcome :nth-child(4) label{
+    padding-top: 14px;
+}
+.welcome button{
+    margin-top: 27px;
+}
+.layout{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.input-container input{
+    height: 40px;
+    width: 100%;
+}
+.welcome .text-esqueceu-senha span{
+    font-size: 0.75rem;
+    padding-top: 13px;
+}
+.text-esqueceu-senha{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-validar-qr-code{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+.btn-validar-qr-code button{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    width: 130px;
+    border: 1px solid #00C8FF;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-weight: 400px;
+    font-size: 0.875rem;
+}
+.btn-validar-qr-code button:hover{
+    background-color: #EBF8FF;
+    transition: 0.5s;
+}
+.text-criar-conta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-criar-conta p{
+    font-weight: 500;
+    font-size: 13px;
+    padding-top: 84px;
+    padding-bottom: 0px;
+}
+.text-criar-conta p a{
+color: #00c8ff;
+}
+/* MODAL PAGINA DO VISITANTE */
+.modalcad {
+    display: none;
+    z-index: 1;
+}
+.modalcad:target {
+    display: flex;
+}
+ 
+.modalcad {
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+ 
+.modalcad:target {
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+.modalcad-tamanho {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    cursor: default;
+}
+ 
+.modalcad-conteudo {
+    width: 28.813rem;
+    height: 26.25rem;
+    position: relative;
+    background-color: #fff;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+}
+ 
+.modalcad-botao {
+    color: rgb(0, 0, 0);
+    width: 13px;
+    height: 13px;
+    border-radius: 7px;
+}
+
+.modalcad-x{
+    padding: 17px 0px 0px 13px;
+}
+.modalcad-visitante{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1.835rem;
+}
+.modalcad-visitante h1{
+    font-size: 36px;
+}
+.modalcad-visitante p{
+    font-size: 14px;
+    padding-bottom: 1.438rem;
+}
+.btn-grey-validation{
+    width: 14.813rem;
+    height: 4.875rem;
+    font-size: 18px;
+    font-weight:600 ;
+    background-color: #FAFAFA;
+    border-radius: 7px;
+}
+.btn-grey-validation:hover{
+    background-color: #F3F3F3;
+}
+
+/* MODAL VALIDAR CERTIFICADO */
+.modal-validar-certificado {
+    display: none;
+    z-index: 1;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-validar-certificado:target {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.modal-container-one{
+    width: 300px;
+}
+.modal-tamanho {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    cursor: default;
+}
+
+.modal-conteudo-validar-certificado {
+    width: 49.375rem;
+    height: 23.75rem;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 46px 33px 46px;
+}
+.modal-container-one h1{
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.modal-container-one p{
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 28px;
+}
+.modal-container-one input{
+    padding: 0px 10px;
+    height: 40px;
+    width: 305px;    
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 300;
+    user-select: none;
+    border: 1px solid #606060;
+    color: #606060;
+    text-align: center;
+}
+.modal-container-one button:nth-child(5){
+    margin-bottom: 10px;
+}
+.modal-container-two{
+    height: 100%;
+}
+/*  MODAL CERTIFICADO IMUNIZADO*/
+.modal-ui13-2 {
+    display: none;
+    z-index: 100;
+}
+ 
+.modal-ui13-2:target {
+    display: flex;
+}
+ 
+.modal-ui13-2 {
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+ 
+.modal-ui13-2:target {
+    justify-content: center;
+    align-items: center;
+}
+ 
+.modal-ui13-2-tamanho {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    cursor: default;
+}
+ 
+.modal-ui13-2-conteudo {
+    width: 28.125rem;
+    height: 31.25rem;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+ 
+.modal-ui13-2-botao {
+    color: rgb(0, 0, 0);
+    width: 13px;
+    height: 13px;
+    border-radius: 7px;
+}
+
+.modal-ui13-2-x{
+    padding: 17px 0px 0px 13px;
+}
+.modal-ui13-2-corpo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3.75rem;
+    padding-right: 3.75rem;
+    padding-left: 1rem;
+}
+.modal-ui13-2-corpo p{
+    width: 300px;
+    font-size: 14px;
+    padding-top: 2.313rem;
+    padding-bottom: 1.438rem;
+}
+.btn-grey-validation{
+    width: 14.813rem;
+    height: 4.875rem;
+    font-size: 18px;
+    font-weight:600 ;
+    background-color: #FAFAFA;
+    border-radius: 7px;
+}
+.btn-grey-validation:hover{
+    background-color: #F3F3F3;
+}
+.modal-ui13-2-corpo button{
+    width: 300px;
+    margin-top: 5px;
+}
+.modal-ui13-2-corpo input{
+    padding-left: 40px;
+    margin-bottom: 1.75rem;
+}
+.modal-ui13-2-corpo .primeiro-span{
+    justify-content: flex-start;
+    padding-bottom: 1.625rem;
+}
+
+/*  */
+.wrap-cima{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.625rem;
+}
+.wrap-meio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.wrap-meio-e{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wrap-meio-e div{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.875rem;
+}
+.wrap-meio-d{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wrap-meio-d div{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.875rem;
+}
+.texto-pequeno{
+    font-size: 0.875rem;
+}
+.escuro-bold{
+    font-weight: 500;
+    font-size: 18px;
+}
+.wrap-baixo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrap-baixo-span1{
+    font-size: 24px;
+    line-height: 36px;
+}
+.wrap-baixo-span2{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    color: #00D689;
+    padding-bottom:1rem;
+}
+

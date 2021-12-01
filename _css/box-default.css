@@ -1,0 +1,91 @@
+.box_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.box_wrapper{
+    height: 530px;
+    width: 450px;
+     display: flex;
+    flex-direction: column; 
+    overflow: hidden; 
+    border-radius: 7px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+}
+
+.box_header{
+    background-color: #FF7E66;
+    width: 100%;
+    height: 30px;
+    padding: 0px 19px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-style: 14px;
+    font-weight: 600;
+}
+.box_middle{
+    margin-top: 0px;
+    height: 460px;
+    width: 100%;
+}
+.box_bottons{
+    width: 100%;
+    height: 40px;
+    padding: 0px 19px;
+    border-top: 1px solid #E8E8E8;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* BOX WITH FORM */
+.box_middle_form {
+    padding: 15px 19px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+.box_middle_form > .input-container{
+    margin-bottom: 15px;
+}
+
+/* BOX WITH TABLE */
+.box_middle_table .table-default td, .box_middle_table .table-default th{
+    font-size: 12px;
+}
+.box_middle_table .table-default td:first-child{
+    padding-left: 19px;
+}
+.box_middle_table .table-default td:last-child{
+    padding-right: 19px;
+}
+
+.box_middle_table .table-default th:first-child{
+    padding-left: 19px;
+}
+.box_middle_table .table-default th:last-child{
+    padding-right: 19px;
+}
+
+/* CONFIG TABLE WITH REGION */
+.box_config_region .legend_box_region{
+    border-bottom: 1px solid #dfdfdf;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 15px 19px;
+    font-size: 24px;
+}
+.box_config_region > .input-container{
+    margin: 15px 19px;
+}
+.box_config_region > .search-wrap > .search-box{
+    width: 100%; border-radius: 0px;
+}
+
+

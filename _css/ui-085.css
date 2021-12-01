@@ -1,0 +1,31 @@
+.container-middle p {
+  margin-bottom: 30px;
+}
+
+.container-middle div{
+  margin-top: 30px;
+}
+
+.input-container label {
+  margin-bottom: 4px;
+}
+
+.container-bottom form #input1{
+  margin-bottom: 15px;
+  margin-top: 10px;
+
+}
+
+.container-bottom form #input2{
+  margin-bottom: 315px;
+
+}
+
+#butVoltar{
+  color: #606060 ;
+  text-decoration:none;
+}
+
+.container-bottom{
+  margin-top: 200px;
+}

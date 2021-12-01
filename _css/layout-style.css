@@ -1,0 +1,55 @@
+/* LAYOUT GERENCIAMENTO */
+#container_manager{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "sidebar main";
+    grid-template-rows: 1fr;
+    grid-template-columns: 231px 1fr;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* MENU  */
+
+#container_manager #container_menu{
+    grid-area: sidebar;
+    background-color: #FF7E66;
+    height: 100%;
+    position: fixed;
+    width: 231px;
+    overflow: hidden;
+}
+
+/* CONTEUDO PRINCIPAL */
+
+#container_manager #container_main{
+    grid-area: main;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+#container_manager #wrapper_main{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    max-width: 1075px;
+}
+
+.container_header {
+    width: 100%;
+}
+
+.container_middle{
+    width: 100%;
+    height: 100%;
+}
+
+.container_bottom {
+    width: 100%;
+}
+
+ 

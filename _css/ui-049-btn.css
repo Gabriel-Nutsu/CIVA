@@ -1,0 +1,65 @@
+.btn-tabela button{
+    width:200px;
+    height:40px;
+    border-radius: 7px;
+    font-size: 18px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 600;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right:20px;
+  
+  }
+  
+  .btn-salvar{
+      background-color: #FF7E66;
+      color: #ffffff;
+  }
+
+  .alinhamento-icone{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    }
+
+  .alinhamento-icone span{
+        padding: 5px;
+    }
+  
+  
+  
+  .btn-voltar{
+      background-color:#EEEEEE;
+      color:#606060;
+  
+  }
+  
+  .btn-voltar:hover{
+      background-color:#dfdfdf
+  }
+  
+  .btn-salvar{
+      background-color: #FF7E66;
+      color: #ffffff;
+  }
+  
+    
+    .btn-salvar:hover {
+       background-color: #FF9582;
+      
+    }
+    
+    .btn-salvar:active {
+      background-color: #FFEDE3;
+    }  
+
+    .alinhamento{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }

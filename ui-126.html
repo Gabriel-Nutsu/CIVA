@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ICONES -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="_css/_ui-126.css" />
+    <!-- <link rel="stylesheet" href="./_css/modal.css"> -->
+    <!-- SCRIPT -->
+    <script src="_js/ui-126.js"></script>
+
+    <!--Adicione ao título o nome da sua página-->
+    <title>CIVA - Meus dados</title>
+</head>
+
+<body id="container-manager">
+    <div id="container-menu">
+        <div class="profile-info">
+            <!--Parte da foto e dados do usuário-->
+            <div class="photo-profile">
+                <img src="" alt="" />
+            </div>
+            <p class="name-user">Maria Souza</p>
+            <p>Gestor OMS</p>
+        </div>
+        <nav class="menu-sidebar">
+          <!--Opções do Menu-->
+          <ul>
+              <li class="item-menu "><i></i><i></i>
+                  <a href="ui-107.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+              </li>
+              <li class="item-menu"><i></i><i></i>
+                  <a href="ui-115.html"><span class="material-icons">flag</span>Gerenciar país</a>
+              </li>
+              <li class="item-menu"><i></i><i></i>
+                  <a href="ui-120.html"><span class="material-icons">assessment</span>Painel relatório</a>
+              </li>
+              <li class="item-menu"><i></i><i></i>
+                  <a href="ui-121.html"><span class="material-icons">vaccines</span>Gerenciar vacina</a>
+              </li>
+              <li class="item-menu active-item-menu"><i></i><i></i>
+                  <a href="#"><span class="material-icons">account_circle</span>Perfil</a>
+              </li>
+          </ul>
+      </nav>
+    </div>
+
+    <div id="container-modal">
+      <span class="modal-default">
+      <div class="group-info-modal">
+        <img src="_assets/icon_atention.svg" alt="">
+        </div>
+        <h3>Dados alterados com sucesso!</h3>
+        <div class="group-btn-modal">
+        <button class="btn-default d-coral" id="modalclose2" style="width: 150px;">Finalizar</button>
+      </div>
+    </span>
+  </div>
+
+    <div id="container-main">
+      <!--Não excluir, pois isso modifica a formatação-->
+
+      <div id="wrapper-main">
+        <header class="container-header">
+          <h1>Meus dados</h1>
+        </header>
+
+        <div class="container-middle">
+          <div class="box-wrapper">
+            <!-- CONTAINER CABEÇALHO -->
+            <header class="box-header">Meus dados</header>
+
+            <!-- CONTAINER DO MEIO -->
+          
+            <form id="dados" method="get" class="box-middle box-middle-form">
+              <div class="input-container">
+                <label for="nCompleto">Nome completo</label>
+                <input
+                  type="text"
+                  placeholder="Maria Souza Almeida"
+                  class="input-default"
+                  id="nCompleto"
+                  name="nCompleto"
+                  value=""
+                />
+              </div>
+
+              <div class="input-container">
+                <label for="nCiva">Número CIVA</label>
+                <input
+                  type="text"
+                  placeholder="BR5513456789"
+                  class="input-default"
+                  id="nCiva"
+                  name="nCiva"
+                  value=""
+                />
+              </div>
+
+              <div class="input-container">
+                <label for="nasc">Data de Nascimento</label>
+                <input
+                  type="text"
+                  placeholder="19/02/2021"
+                  class="input-default"
+                  id="nasc"
+                  name="nasc"
+                  value=""
+                />
+              </div>
+
+              <div class="input-container">
+                <label for="idUser">Identidade</label>
+                <input
+                  type="text"
+                  placeholder="123.456.789.01"
+                  class="input-default"
+                  id="idUser"
+                  name="idUser"
+                  value=""
+                />
+              </div>
+
+              <div class="input-container">
+                <label for="origem">País de origem</label>
+                <input
+                  type="text"
+                  placeholder="Brasil"
+                  class="input-default"
+                  id="origem"
+                  name="origem"
+                  value=""
+                />
+              </div>
+
+              <div class="input-container">
+                <label for="cargo">Cargo</label>
+                <input
+                  type="text"
+                  placeholder="Profissional de saúde"
+                  class="input-default"
+                  id="cargo"
+                  name="cargo"
+                  value=""
+                />
+              </div>
+
+              <div class="input-container">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  placeholder="maria@gmail.com"
+                  class="input-default"
+                  id="email"
+                  name="email"
+                  value=""
+                />
+              </div>
+
+              <div class="input-container">
+                <label for="contato">Contato</label>
+                <input
+                  type="text"
+                  placeholder="5521912345678"
+                  class="input-default"
+                  id="contato"
+                  name="contato"
+                  value=""
+                />
+              </div>       
+          </form>
+        </div>
+         <a href="/ui-123.html"> <button class="btn-default d-grey">Voltar</button></a>
+                    <button type="submit" form="dados" class="btn-default d-coral" >Salvar</button>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ICONES -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel= "stylesheet">
+        <!-- ESTILOS -->
+            <link rel="stylesheet" href="_css/ui-050.css">
+            <link rel="stylesheet" href="_css/ui-051-btn.css">
+            <script src="_js/-ui-050.js"></script>
+
+        <!--Adicione ao título o nome da sua página-->
+            <title>CIVA - Painel Unidade </title>
+
+    </head>
+    <body id="container-manager">
+        <div id="container-menu">
+
+            <div class="profile-info"><!--Parte da foto e dados do usuário-->
+                <div class="photo-profile">
+                    <img src="" alt="">
+                </div>
+                <p class="name-user">Nome Sobrenome</p>
+                <p>Cargo</p>
+            </div>
+            <nav class="menu-sidebar"><!--Opções do Menu-->
+                <ul>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-043.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                    </li>
+
+                    <li> 
+                        <li class="item-menu"><i></i><i></i>
+                            <a href="ui-049.html" class="btn"><span class="material-icons-outlined">pin_drop</span> Gerenciar unidade </a>
+                    </li>
+
+                    <li class="item-menu active-item-menu"><i></i><i></i>
+                        <a href="ui-051.html"><span class="material-icons">contact_page</span>Gerenciar vacinação</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-053.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-054.html"><span class="material-icons">account_circle</span>Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>W
+
+        <div id="container-main"><!--Não excluir, pois isso modifica a formatação-->
+            <div id="wrapper-main">
+
+                <header class="container-header">
+                    <h1>Painel Unidade</h1>
+                </header>
+
+                <div class="container-middle">
+                    <form action="" id="form-dados">
+                  
+
+                    <div class="box-wrapper">
+
+                        <!-- CONTAINER CABEÇALHO -->
+                            <header class="box-header">Dados Unidade</header>
+                        
+                        <!-- CONTAINER DO MEIO -->
+                        <div class="box-middle box-middle-form">
+                        
+                            <div class="input-container">
+                        
+                                <label for="nome-hospital">Nome</label>
+                                <input type="text" placeholder="Hospital Pan" class="input-default" name="nome-hospital" id="nome-hospital">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="id-unidade">ID unidade</label>
+                                <input type="text" placeholder="123456789" class="input-default" name="id-unidade" id="id-unidade">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="codigo-postal">Código Postal</label>
+                                <input type="text" placeholder="12345-122" class="input-default" name="codigo-postal" id="postal">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="estado">Estado</label>
+                                <input type="text" placeholder="Rio de Janeiro" class="input-default" name="estado" id="estado">
+                            </div>
+
+                            <div class="input-container">
+                                <label for="endereço">Endereço</label>
+                                <input type="text" placeholder="12345-122" class="input-default" name="endereço" id="endereço">
+                            </div>
+                        
+
+
+                            <div class="input-container">
+                                <label for="municipio">Município</label>
+                                <input type="text" placeholder="Niterói" class="input-default" name="municipio" id="municipio">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="locaçao">Locação</label>
+                                <input type="text" placeholder="Fixa" class="input-default" name="locaçao" id="locaçao">
+                            </div>
+
+                            <div class="input-container">
+                                <label for="tipo-natureza">Natureza</label>
+                                <input type="text" placeholder="Pública" class="input-default" name="tipo-natureza" id="tipo-natureza">
+                            </div>
+
+                            <div class="input-container">
+                                <label for="estabelecimento">Estabelecimento</label>
+                                <input type="text" placeholder="Hospital" class="input-default" name="estabelecimento" id="estabelecimento">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="contato2">Contato</label>
+                                <input type="text" placeholder="5521123456789" class="input-default" name="contato2" id="contato2">
+                            </div>
+                        </form>
+
+                        </div>
+                        
+                        <!-- CONTAINER INFERIOR BOTOES -->
+                            <div class="box-bottom">
+                                <div class="toggle-container">
+                                    <div class="toggle-btn">
+                                    <div class="inner-circle"></div>
+                                    <span class="toggle-name">Ativado</span>
+                                </div> 
+                                 </div>
+                        
+                            </div>
+                        </div>
+                        <div class="box-wrapper">
+                        <header class="box-header">Gestores Vinculados</header>
+                        <div class="box-middle box-middle-table">
+                            <table class="table-default">
+                                <tbody><tr>
+                                    <th>Nome</th>
+                                    <th>Identidade</th>
+                                    <th>Número civa</th>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Maria Souza da Silva</td>
+                                    <td>123.159.875-05</td>
+                                    <td>BR5513456789</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Maria Souza da Silva</td>
+                                    <td>123.159.875-05</td>
+                                    <td>BR5513456789</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Maria Souza da Silva</td>
+                                    <td>123.159.875-05</td>
+                                    <td>BR5513456789</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Maria Souza da Silva</td>
+                                    <td>123.159.875-05</td>
+                                    <td>BR5513456789</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Maria Souza da Silva</td>
+                                    <td>123.159.875-05</td>
+                                    <td>BR5513456789</td>
+                                </tr>
+                               
+                            </tbody></table>
+                        </div>
+                    </div>
+
+                </div>   <!-- fechamento da middle -->
+
+                <div class="container-bottom">
+                   
+                    <div class="btn-tabela"> 
+                     
+                        <a href="ui-049.html"><button class="btn-voltar">Voltar</button></a>
+                        <button form="form-dados" class="btn-salvar" type="submit">Salvar</button>
+                        
+                        
+                    </div> 
+
+                </div>  
+            </div> 
+        </div> 
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+

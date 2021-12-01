@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ICONES -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <!-- ESTILOS -->
+            <link rel="stylesheet" href="_css/ui-116.css">
+            <link rel="stylesheet" href="_css/style-global.css">
+            
+        <!--Adicione ao título o nome da sua página-->
+            <title>CIVA - Cadastrar novo País </title>
+              <style>
+        .space{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0px;
+        }
+        .space > div{
+            margin: 5px;
+        }
+    
+    </style>
+    </head>
+    <body id="container-manager">
+        <div id="container-menu">
+
+            <div class="profile-info"><!--Parte da foto e dados do usuário-->
+                <div class="photo-profile">
+                    <img src="" alt="">
+                </div>
+                <p class="name-user">Nome Sobrenome</p>
+                <p>Cargo</p>
+            </div>
+            <nav class="menu-sidebar"><!--Opções do Menu-->
+                <ul>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-107.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                    </li>
+                    <li class="item-menu active-item-menu"><i></i><i></i>
+                        <a href="ui-115.html"><span class="material-icons">flag</span>Gerenciar país</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-120.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-121.html"><span class="material-icons">vaccines</span>Gerenciar vacina</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-123.html"><span class="material-icons">account_circle</span>Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="container-main"><!--Não excluir, pois isso modifica a formatação-->
+        
+        <div id="wrapper-main">
+            <h3>Cadastrar novo País</h3>
+            
+            <div class="box-wrapper">
+            <header class="container-header">
+                <header class="box-header">Dados país</header>
+            </header>
+
+
+            <form action="ui-117.html" method="GET" id="form1">
+            <div class="container-middle">
+                <div class="box-middle box-middle-form">
+        
+                    <div class="input-container">
+                        <label for="">País</label>
+                        <input id="país" type="text" placeholder="Ex: Brasil" class="input-default">
+                    </div>
+                
+                    <div class="input-container">
+                        <label for="">Documentação PC</label>
+                        <input id="doc pc" type="text" placeholder="Ex: CPF" class="input-default">
+                    </div>
+                
+                    <div class="input-container">
+                        <label for="">Orgão de Saúde</label>
+                        <input id="orgão" type="text" placeholder="Ex: Ministério da Saúde" class="input-default">
+                    </div>
+                
+                    <div class="input-container">
+                        <label for="">Documentação PS</label>
+                        <input id="doc ps" type="text" placeholder="Ex: CRM" class="input-default">
+                    </div>
+                    <div class="input-container">
+                        <label for="">Padrão de Contato</label>
+                        <select>
+                            <option>Selecionar</option>
+                        </select>
+                    </div>
+                    <div class="fuso">
+                    <div class="input-container">
+                        <label for="">Fuso Horário</label>
+                        <select>
+                            <option>Selecionar</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="continente">
+                    <div class="input-container">
+                        <label for="">Continente</label>
+                        <Select class="continente">
+                            <option selected>Selecionar</option>
+                            <option name="Àfrica">Àfrica</option>
+                            <option name="Antartica">Antartica</option>
+                            <option name="Australia">Australia</option>
+                            <option name="Asia">Asia</option>
+                            <option name="North America">North America</option>
+                            <option name="South America">South America</option>
+                        </Select>
+                    </div>
+                    </div>
+            </div>
+        </div> 
+        </div> 
+        <div class="container-bottom"  id="container-buttom">
+
+            <a href="ui-115.html">
+                <button type="button" class="btn-default d-grey" id="botão">Voltar</button>
+            </a>
+        
+            <a>
+                <button form="form1" class="btn-default d-coral">Cadastrar</button>
+            </a>
+        
+        </div>
+    </form>
+        <script src="_js/ui-116.js"></script>
+        
+        
+    </body>
+</html>

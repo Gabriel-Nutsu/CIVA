@@ -1,0 +1,429 @@
+/* RESET-STYLE.CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+ 
+
+  
+*{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    font-style: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background: none;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    color: #133C55;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+
+p{
+    font-size: 14px;   
+}
+
+h1{
+    font-size: 51px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* COLORS BUTTONS */
+.d-blue{
+    background-color: #00A4FF;
+    color: white;
+}
+.d-blue:hover{
+    background-color: #5CC5FF;
+    transition: 0.5s;
+}
+.d-blue:active{
+    background-color: #008FDE;
+    transition: 0.5s;
+}
+
+
+.d-blue-out{
+    background-color: white;
+    border: 1px solid #00A4FF;
+    color: #00A4FF;
+}
+.d-blue-out:hover{
+    background-color: #EBF8FF;
+}
+.d-blue-out:active{
+    background-color: #D2EFFF;
+}
+
+.d-grey-out{
+    background-color: white;
+    border: 1px solid #606060;
+    color: #606060;
+}
+.d-grey-out:hover{
+    background-color: #F3F3F3;
+}
+.d-grey-out:active{
+    background-color: #E1E1E1;
+}
+
+.d-blue-blue{
+    background-color: #DFF4FF;
+    color: #00A4FF;
+}
+.d-blue-blue:hover{
+    background-color: #C7EBFF;
+}
+.d-blue-blue:active{
+    background-color: #B2E4FF;
+}
+.btn-default{
+    padding: 0px 10px;
+    height: 40px;
+    width: 198px;    
+    border-radius: 7px;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 600;
+    user-select: none;
+}
+
+
+/* INPUTS */
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+.input-container > label{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.input-default{
+    height: 40px;
+    width: 200px;
+    border-radius: 7px;
+    font-size: 14px;
+    border: 1px solid #DFDFDF;
+    padding-left:  14px ;
+    padding-right:  14px ;
+}
+.input-default::placeholder{
+    color: #B5B5B5;
+    font-size: 14px;
+ 
+}
+.input-default:disabled{
+    background-color: #E8E8E8;
+}
+/* INPUT SELECT */
+.select-default > select {
+    border: 1px solid #DFDFDF;
+    padding: 5px;
+    appearance: none;
+    width: 100%;
+    position: absolute;
+    border-radius: 7px;
+    height: 100%;
+    padding: 0px 14px;
+    font-size: 14px;
+}
+.select-default {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.select-default .material-icons{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    margin-right: 5px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.select-default.select-out > select{
+    border: 0;
+    font-size: 12px;
+}
+.select-default.select-label{
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+/* LAYOUT-STYLE.CSS */
+/* LAYOUT GERENCIAMENTO */
+#container_manager{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "sidebar main";
+    grid-template-rows: 1fr;
+    grid-template-columns: 500px 1fr;
+    position: relative;
+    overflow-x: hidden;
+}
+#container_welcome{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-bottom: 37px; 
+}
+
+#container_manager #container_menu{
+    grid-area: sidebar;
+    background-color: #00A4FF;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+#container_welcome h1{
+    padding-left: 12px;
+    padding-bottom: 38px;
+    font-size: 3.1rem;
+    align-self: flex-start;
+}
+#container_manager #container_main{
+    grid-area: main;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container_manager #wrapper_main{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    max-width: 1075px;
+}
+
+.container_header {
+    width: 100%;
+}
+
+.container_middle{
+    width: 100%;
+    height: 100%;
+}
+
+.container_bottom {
+    width: 100%;
+}
+
+/* MODAL-STYLE.CSS */
+/* MODAL */
+#container_modal{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;  
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.modal_default{
+    height: 430px;
+    width: 450px;
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 40px 40px;
+}
+.modal_default img{
+    user-select: none;
+}
+
+.layout{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+/* TEXTO ABAIXO INPUTS */
+
+.text-entrar-btn-cadastrar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.text-criar-conta p{
+    font-weight: 500;
+    font-size: 13px;
+    padding-top: 43px;
+    padding-bottom: 0px;
+}
+.text-criar-conta p a{
+color: #00c8ff;
+}
+
+/* CAMPOS DE INPUT  */
+
+.box_input{
+    display: flex;
+   align-items: center;
+}
+.box-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.box-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.box-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.box-4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.box-5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box-input :nth-child(4) div input{
+    width: 421px;
+}
+/* MODAL  */
+.modalcad {
+    display: none;
+    z-index: 1;
+}
+ 
+.modalcad:target {
+    display: flex;
+}
+ 
+.modalcad {
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+ 
+.modalcad:target {
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+.modalcad-tamanho {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    cursor: default;
+}
+ 
+.modalcad-conteudo {
+    width: 56.25rem;
+    height: 37.5rem;
+    position: relative;
+    background-color: #fff;
+    border-radius: 7px;
+    display: flex;
+}
+ 
+.modalcad-botao {
+    color: rgb(0, 0, 0);
+    width: 13px;
+    height: 13px;
+    border-radius: 7px;
+}
+.modalcad-cima{
+    display: flex;
+    justify-content: center;
+    padding: 65px 0 40px;
+}
+.modalcad-meio{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 70px;
+}
+.modalcad-baixo{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 12px 0px 0px 13px;
+}
+.modalcad-botao:hover{
+    background-color: var(--botao-laranja-hover);
+}
+.modalcad-botao:active{
+    transform: scale(0.95);
+    background-color: var(--botao-laranja-active);
+}
+.container-textos{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    max-width: 940px;
+  
+}
+.container-textos p{
+    font-size: 14px;
+    text-indent: 80px;
+    padding: 10px 52px 2px 26px;
+}
+.container-textos p:nth-child(2){
+    padding-bottom: 15px;
+}
+.container-textos h6{
+    display: flex;
+    align-self: center;
+    font-style: normal;
+    font-weight: 600;
+    padding-bottom: 7px;
+    padding-top: 29px;
+    font-size: 14px;
+}
+.container-textos h5{
+    font-size: 14px;
+    text-indent: 50px;
+    font-style: normal;
+    font-weight: normal;
+}

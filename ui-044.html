@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ICONES -->
+    <link   href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link   href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- ESTILOS -->
+
+    <link rel="stylesheet" href="_css/reset-style.css" />
+    <link rel="stylesheet" href="_css/layout-style.css" />
+    <link rel="stylesheet" href="_css/menu-default.css" />
+    <link rel="stylesheet" href="_css/global-style.css" />
+    <link rel="stylesheet" href="_css/box-default.css" />
+
+    <link rel="stylesheet" href="_css/ui-041.css" />
+    <link rel="stylesheet" href="_css/style-global.css" />
+    <title>CIVA - UI044</title>
+
+    <style>
+      .space {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 0px;
+      }
+      .space > div {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body id="container-manager">
+    <div id="container-menu">
+
+      <div class="profile-info"><!--Parte da foto e dados do usuário-->
+          <div class="photo-profile">
+              <img src="" alt="">
+          </div>
+          <p class="name-user">Nome Sobrenome</p>
+          <p>Cargo</p>
+      </div>
+      <nav class="menu-sidebar"><!--Opções do Menu-->
+          <ul>
+              <li class="item-menu active-item-menu"><i></i><i></i>
+                  <a href="ui-043.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+              </li>
+              <li class="item-menu"><i></i><i></i>
+                  <a href="ui-049.html"><span class="material-icons">place</span>Gerenciar unidade</a>
+              </li>
+              <li class="item-menu"><i></i><i></i>
+                  <a href="ui-051.html"><span class="material-icons">contact_page</span>Gerenciar vacinação</a>
+              </li>
+              <li class="item-menu"><i></i><i></i>
+                  <a href="ui-053.html"><span class="material-icons">assessment</span>Painel relatório</a>
+              </li>
+              <li class="item-menu"><i></i><i></i>
+                  <a href="ui-054.html"><span class="material-icons">account_circle</span>Perfil</a>
+              </li>
+          </ul>
+      </nav>
+
+  </div>
+  
+    <div id="container-main">
+      <div id="wrapper-main">
+        <header class="container-header">
+          <h2>Cadastrar Profissional de Saúde</h2>
+        </header>
+        <section class="space">
+          <div class="box_container">
+            <div class="box_wrapper">
+              <!-- CONTAINER CABEÇALHO -->
+              <header class="box_header">Dados Profissional de Saúde</header>
+
+              <!-- CONTAINER DO MEIO -->
+              <form
+                class="box_middle box_middle_form"
+                id="form1"
+              >
+                <div class="input-container">
+                  <label for="nome_compl">Nome completo</label>
+                  <input
+                    type="text"
+                    id="nome_compl"
+                    placeholder="Ex: Maria Souza Almeida"
+                    class="input-default"
+                  />
+                </div>
+
+                <div class="input-container">
+                  <label for="ident">Identidade</label>
+                  <input
+                    type="text"
+                    id="ident"
+                    placeholder="000.000.000-00"
+                    class="input-default"
+                  />
+                </div>
+
+                <div class="input-container">
+                  <label for="data_nasc">Data de nascimento</label>
+                  <input
+                    type="text"
+                    id="data_nasc"
+                    placeholder="00/00/00"
+                    class="input-default"
+                  />
+                </div>
+
+                <div class="input-container">
+                  <label for="pais_ori">País de origem</label>
+                  <select class="input-default" id="pais_ori">
+                    <option value="Selecionar">Selecionar</option>
+                  </select>
+                </div>
+
+                <div class="input-container">
+                  <label for="id_ponto">ID Ponto</label>
+                  <input
+                    type="text"
+                    id="id_ponto"
+                    placeholder="Ex: 123456"
+                    class="input-default"
+                  />
+                </div>
+
+                <div class="input-container">
+                  <label for="CRM_num">CRM</label>
+                  <input
+                    type="text"
+                    id="CRM_num"
+                    placeholder="Ex: 1234/RJ"
+                    class="input-default"
+                  />
+                </div>
+
+                <div class="input-container">
+                  <label for="email">Email</label>
+                  <input
+                    type="text"
+                    id="email"
+                    placeholder="Ex: nome@mail.com"
+                    class="input-default"
+                  />
+                </div>
+
+                <div class="input-container">
+                  <label for="cont">Contato</label>
+                  <input
+                    type="text"
+                    id="cont"
+                    placeholder="Ex: 55+91234-5678"
+                    class="input-default"
+                  />
+                </div>
+
+                <div class="input-container">
+                  <label for="senha">Senha</label>
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="***************"
+                    class="input-default"
+                  />
+                </div>
+
+                <div class="input-container">
+                  <label for="conf_senha">Confirmação</label>
+                  <input
+                    type="text"
+                    id="password2"
+                    placeholder="***************"
+                    class="input-default"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <div class="container-bottom">
+          <div>
+            <a href="ui-043.html">
+              <button type="button" class="btn-default d-grey" style="margin-right: 40px">
+                Voltar
+              </button>
+            </a>
+            <button class="btn-default d-coral" form="form1">
+              Cadastrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="_js/ui-044.js"></script>
+    <script src="_js/ui-108.js"></script>
+  </body>
+</html>

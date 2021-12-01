@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/ui-033_favicon_managers.svg" type="image/x-icon">
+    <link rel="stylesheet" href="_css/ui-033.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet">
+    <title>CIVA - Cadastrar Portador CIVA</title>
+</head>
+<body id="container-manager">
+
+    <div id="container-menu">
+        <div class="profile-info">
+            <div class="photo-profile">
+            <img src="img/ui-033_default_user.svg" alt="">
+            </div>
+            <p class="name-user">Nome Sobrenome</p>
+            <p>Cargo</p>
+        </div>
+        <nav class="menu-sidebar">
+            <ul>
+                <li class="item-menu active-item-menu"><i></i><i></i>
+                    <a href="#" class="btn"><span class="material-icons-round">people_alt</span>Gerenciar usuário</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-035.html"><span class="material-icons-round">contact_page</span>Gerenciar vacinação</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-037.html"><span class="material-icons-round">assessment</span>Painel relatório</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-038.html"><span class="material-icons-round">account_circle</span>Perfil</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="container-main">
+     <div id="wrapper-main">
+        
+        <header class="container-header">
+            <h3>Cadastrar Portador CIVA</h3>
+        </header>
+    
+        <!-- CONTAINER MIDDLE -->
+        <div class="container-middle">
+            <div class="box-container">
+                <!-- BOX LEFT -->
+                <div class="box-wrapper">
+             
+                    <form id="form-register-portadorciva">
+
+                    <header class="box-header">Dados Portador
+
+                        <div class="input-container">
+                            <div class="select-default select-header-box">
+                              <select required="" id="select-document">
+                                  <option value="" selected="" disabled="">Selecionar</option>
+                                  <option value="1">Documento Nacional</option>
+                                  <option value="2">Passaporte</option>
+                              </select>
+                              <span class="material-icons-round icon-select">expand_more</span>
+                            </div>
+                          </div>
+                    </header>
+ 
+                <div class="box-middle box-middle-form">
+                
+                    <div class="input-container">
+                
+                        <label for="">Nome completo</label>
+                        <input type="text" placeholder="Ex: Maria Souza Almeida" class="input-default" id="name-complet">
+                    </div>
+                
+                    <div class="input-container">
+                        <label for="">Identidade</label>
+                        <input type="text" placeholder="000.000.000-00" class="input-default" id="identity">
+                    </div>
+                
+                    <div class="input-container">
+                        <label for="">Data de nascimento</label>
+                        <input type="date" placeholder="Ex: Dose ùnica" class="input-default" id="date-birth">
+                    </div>
+                
+                    <div class="input-container">
+                        <label for="">País de origem</label>
+                          <div class="select-default">
+                            <select required="" id="country">
+                                <option value="" selected disabled>Selecionar</option>
+                                <option value="1">Brasil</option>
+                                <option value="2">EUA</option>
+                            </select>
+                            <span class="material-icons-round icon-select">expand_more</span>
+                          </div>
+                        </div>
+                    
+                    <div class="input-container">
+                        <label for="">Endereço</label>
+                        <input type="text" placeholder="Ex: Avenida Rio Branco" class="input-default" id="adress">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Contato</label>
+                        <input type="text" placeholder="Ex: 55+91234-5678" class="input-default" id="contact">
+                    </div>
+
+                    <div class="input-container max-width">
+                        <label for="">Email</label>
+                        <input type="email" placeholder="Ex: nome@mail.com" class="input-default max-width" id="email">
+                    </div>
+ 
+                    <div class="input-container">
+                        <label for="">Senha</label>
+                        <input type="password" placeholder="Digite a senha" class="input-default" id="password1">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Senha</label>
+                        <input type="password" placeholder="Confirme a senha" class="input-default" id="password2">
+                    </div>
+                </div>
+                </div>
+ 
+            </div>
+        </form>
+     </div> 
+     <!-- BUTTONS -->
+     <div class="container-bottom">
+        <a href="ui-028.html"><button class="btn-default d-grey">Voltar</button></a>
+        <button class="btn-default d-coral" form="form-register-portadorciva">Cadastrar</button>
+    </div>  
+    </div> 
+    
+ 
+     
+    <script defer src="_js/ui-033.js"></script>
+    
+    </body>
+</html>

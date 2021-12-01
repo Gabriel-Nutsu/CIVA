@@ -1,0 +1,16 @@
+.alinhamento{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.alinhamento-icone{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    }
+
+    .alinhamento-icone span{
+        padding: 5px;
+    }

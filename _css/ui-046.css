@@ -1,0 +1,4 @@
+.container-middle{
+    display: flex;
+    flex-direction: column;
+}

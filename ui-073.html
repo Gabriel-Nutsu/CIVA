@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+            <link rel="stylesheet" href="_css/ui-073.css">
+           
+
+        
+            <title>CIVA - Meus dados</title>
+    </head>
+    <body id="container-manager">
+        <div id="container-menu">
+
+            <div class="profile-info">
+                
+                <div class="photo-profile">
+                    <img src="" alt="">
+                </div>
+                <p class="name-user">Nome Sobrenome</p>
+                <p>Cargo</p>
+            </div>
+            <nav class="menu-sidebar">
+                <ul>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-059.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-065.html"><span class="material-icons">place</span>Gerenciar unidade</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-68.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                    </li>
+                    <li class="item-menu active-item-menu"><i></i><i></i>
+                        <a href="ui-069.html"><span class="material-icons">account_circle</span>Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div id="container-main"><!--Não excluir, pois isso modifica a formatação-->
+        
+            <div id="wrapper-main">
+
+                <header class="container-header">
+                    <h2>Meus dados</h2>
+                </header>
+
+                <div class="container-middle">
+                    <div class="box-wrapper">
+
+                        <!-- CONTAINER CABEÇALHO -->
+                            <header class="box-header">Meus dados</header>
+                        
+                        <!-- CONTAINER DO MEIO -->
+                        <form class="box-middle box-middle-form" id="formulario">
+                            
+                            <div class="input-container">
+                                <label for="nome-completo">Nome Completo</label>
+                                <input type="text" placeholder="Maria Souza Almeida" class="input-default" id="nome-completo">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="numero">Número CIVA</label>
+                                <input type="text" placeholder="BR5513456789" class="input-default" id="numero">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="data-de-nascimento">Data Nascimento</label>
+                                <input type="date" placeholder="29/07/2021" class="input-default" id="data-de-nascimento">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="identidade">Identidade</label>
+                                <input type="text" placeholder="123.456.789-01" class="input-default" id="identidade">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="pais-de-origem">País de origem</label>
+                                <input type="text" placeholder="123.456.789-01" class="input-default" id="pais-de-origem">
+                            </div>
+
+                            <div class="input-container">
+                                <label for="cargo">Cargo</label>
+                                <input type="text" placeholder="Supervisor" class="input-default" id="cargo">
+                            </div>
+
+                            <div class="input-container">
+                                <label for="email">E-mail</label>
+                                <input type="email" placeholder="maria@gmail.com" class="input-default" id="email">
+                            </div>
+
+                            <div class="input-container">
+                                <label for="contato">Contato</label>
+                                <input type="text" placeholder="5521912345678" class="input-default" id="contato">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="container-bottom">
+                    <a href="ui-069.html"><button class="btn-default  d-grey">Voltar</button></a>
+                    <button type="submit" class="btn-default  d-coral" form="formulario">Salvar</button>
+                </div>  
+            </div> 
+        </div>
+        <script defer type="text/javascript" src="_js/ui-073.js"></script> 
+    </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ICONES -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <!-- ESTILOS -->
+        <link rel="stylesheet" href="_css/style-global.css"> 
+        <link rel="stylesheet" href="_css/ui-045.css">
+        <script type="text/javascript" src="_js/ui-045.js"></script>
+
+        <!--Adicione ao título o nome da sua página-->
+            <title>CIVA - Profissional da saúde</title>
+    </head>
+    <body id="container-manager">
+        <div id="container-menu">
+
+            <div class="profile-info"><!--Parte da foto e dados do usuário-->
+                <div class="photo-profile">
+                    <img src="" alt="">
+                </div>
+                <p class="name-user">Nome Sobrenome</p>
+                <p>Cargo</p>
+            </div>
+            <nav class="menu-sidebar"><!--Opções do Menu-->
+                <ul>
+                    <li class="item-menu active-item-menu"><i></i><i></i>
+                        <a href="ui-043.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-049.html"><span class="material-icons">place</span>Gerenciar unidade</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-051.html"><span class="material-icons">contact_page</span>Gerenciar vacinação</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-053.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-054.html"><span class="material-icons">account_circle</span>Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+ 
+        </div>
+
+        <div id="container-main"><!--Não excluir, pois isso modifica a formatação-->
+        
+            <div id="wrapper-main">
+
+                <header class="container-header">
+                    <h1>Profissional de saúde</h1>
+                </header>
+
+                <div class="container-middle">
+                    <div class="box-wrapper">
+
+                        <!-- CONTAINER CABEÇALHO -->
+                            <header class="box-header">Meus dados</header>
+                        
+                        <!-- CONTAINER DO MEIO -->
+                        <form id="meus-prof-saude" class="box-middle box-middle-form">
+                        
+                                                
+                        <div class="input-container">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" placeholder="Maria Souza Almeida" class="input-default">
+                        </div>
+                    
+                        <div class="input-container">
+                            <label for="num-civa">Número CIVA</label>
+                            <input type="text" id="num-civa" placeholder="BR5513456789" class="input-default">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="data-nascimento">Data de nascimento</label>
+                            <input type="date" id="data-nascimento" placeholder="00/00/00" class="input-default">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="identidade">Identidade</label>
+                            <input type="text" id="identidade" placeholder="000.000.000-00" class="input-default">
+                        </div>   
+
+                        <div class="input-container">
+                            <label for="pais-de-origem">Pais de origem</label>
+                            <input type="text" id="pais-de-origem" placeholder="Brasil" class="input-default">
+                            </div>
+                        
+                    
+                        <div class="input-container">
+                            <label for="cargo">ID País</label>
+                            <input type="text" id="cargo" placeholder="Profissional de saúde" class="input-default large">
+                        </div>                  
+                        
+                        <div class="input-container">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="maria@gmail.com" class="input-default">
+                        </div>
+                    
+                        <div class="input-container">
+                            <label for="contato">Contato</label>
+                            <input type="text" id="contato" placeholder="5521912345678" class="input-default">
+                        </div>
+                    </form>
+                            <!-- CONTAINER INFERIOR BOTOES -->
+                    <div class="box-bottom">
+                        <div class="toggle-container">
+                            <div class="toggle-btn">
+                                <div class="inner-circle"></div>
+                                <span class="toggle-name">Ativado</span>
+                            </div> 
+                            </div>
+                            <a href="ui-046.html"><button class="btn-default btn-small d-grey-out" style="width: initial;">Redefinir senha</button></a>
+                            <button class="btn-default btn-small d-red">Excluir</button>
+                    </div>  
+                    </div>
+                
+               
+                    <div class="box-wrapper">
+                    <header class="box-header">Unidades vinculadas</header>
+                    <div class="box-middle box-middle-table">
+                        <table class="table-default">
+                            <tbody><tr>
+                                <th>Nome</th>
+                                <th>Estado</th>
+                                <th>CEP</th>
+                                <th>Identificador</th> 
+
+                            <tr>
+                                <td>Hopital Pan</td>
+                                <td>Rio de Janeiro</td>
+                                <td>12016-102</td>
+                                <td>215648</td>
+                            </tr>
+                            <tr>
+                                <td>Hopital Pan</td>
+                                 <td>Rio de Janeiro</td>
+                                <td>12016-102</td>
+                                <td>215648</td>
+                            </tr>
+                           
+                        </tbody></table>
+                    </div>
+                 
+                    </div>
+            </div>        
+                <div class="container-bottom">
+                    <a href="ui-043.html"><button class="btn-default  d-grey">Voltar</button></a>
+                    <button type="submit" form="meus-prof-saude" class="btn-default  d-coral">Salvar</button>
+                </div>  
+
+            
+    </body>
+</html>

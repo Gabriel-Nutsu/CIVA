@@ -1,0 +1,27 @@
+.alinhamento{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-bottom:20px;
+    
+}
+
+.alinhamento-icone{
+display:flex;
+flex-direction:row;
+align-items:center;
+}
+
+.alinhamento-icone span{
+  margin-right: 5px;
+}
+
+.link-wrap{
+    display: flex;
+    flex-direction:row;  
+}
+
+.link-wrap a {
+
+    margin-right:30px;
+}

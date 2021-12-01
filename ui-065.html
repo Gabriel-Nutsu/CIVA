@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="_css/ui-065.css">
+    <link rel="shotcut icon" href="_assets/favicon.ico" type="image/x-icon">
+    <style>
+        div.manager-bar {
+            display:flex;
+            height:40px;
+            width:1075px;
+            align-items:center;
+            justify-content:space-between;
+            position:relative;
+        }
+        div.manager-bar p {
+            display:inline;
+            justify-content:space-between;
+            margin-left:32px;
+            cursor:pointer;
+        }
+        div.manager-bar p:last-child {
+            margin-left:50px;
+        }
+        div.manager-bar span.icon-1 {
+            left:5px;
+            top:10px;
+            position:absolute;
+            cursor:pointer;
+        }
+        div.manager-bar span.icon-2{
+            left:190px;
+            top:10px;
+            position:absolute;
+            cursor:pointer;
+        }
+        div.pagination-nav {
+            margin-left:350px;
+        }
+    </style>
+    <title>CIVA - Gerenciar Unidade</title>
+</head>
+<body id="container-manager">
+        <div id="container-menu">
+            <div class="profile-info"><!--Parte da foto e dados do usuário-->
+                <div class="photo-profile">
+                    <img src="" alt="">
+                </div>
+                <p class="name-user">Nome Sobrenome</p>
+                <p>Cargo</p>
+            </div>
+            <nav class="menu-sidebar"> <!--Opções do Menu-->
+                <ul>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-059.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                    </li>
+                    <li class="item-menu active-item-menu"><i></i><i></i>
+                        <a href="ui-065.html"><span class="material-icons">place</span>Gerenciar unidade</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-068.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-069.html"><span class="material-icons">account_circle</span>Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+        <div id="container-main">
+         <div id="wrapper-main">
+            <header class="container-header">
+                <h2>Gerenciar Unidade</h2>
+            </header>
+            <header class="container-header">
+                <div class="manager-bar">
+                    <div class="options">
+                        <a href="ui-066.html">
+                            <p id="cad-unid"><span class="material-icons icon-1">pin_drop</span>Cadastrar unidade</p>
+                        </a>
+                        <a href="">
+                            <p id="exprt-unid"><span class="material-icons icon-2">download</span>Exportar unidade</p>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="search-wrap">
+                            <form action="" id="form-srch-unid">
+                            <div class="search-box">
+                                <input type="text" placeholder="Pesquisar por unidade" id="srch-input-cad-unid">
+                                <button class="btn-common d-coral">
+                                    <span class="material-icons ">search</span>
+                                </button>
+                            </div>
+                            </form>
+                        </div>  
+                    </div>
+                </div>
+            </header>
+            <div class="container-middle">
+                <div>
+                    <table class="table-default" id="table-default-teste">
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>Nome</th>
+                            <th>Estado</th>
+                            <th>Município</th>
+                            <th>CEP</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Recanto do Trovador</td>
+                            <td>Rio de Janeiro</td>
+                            <td>Niterói</td>
+                            <td>50120-320</td>
+                            <td><a href="ui-067.html"><button class="btn-table-manage" id="btn-table-manage-1">Gerenciar</button></a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Recanto do Trovador</td>
+                            <td>Rio de Janeiro</td>
+                            <td>Niterói</td>
+                            <td>50120-320</td>
+                            <td><a href="ui-067.html"><button class="btn-table-manage" id="btn-table-manage-2">Gerenciar</button></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="container-bottom">
+                <div>
+                    <div class="pagination-nav">
+                         <a href=""><span class="material-icons">arrow_back_ios_new</span></a> 
+                         <a class="active-pagination" href="">1</a>
+                         <a href="#">2</a> 
+                         <a href="#">3</a> 
+                         <a href="#">4</a>
+                         <a href="#" class="desable-pagination">...</a>
+                         <a href="#">10</a>
+                         <a href="#"><span class="material-icons">arrow_forward_ios</span></a> 
+                    </div>
+                </div>
+            </div>
+         </div> 
+        </div>
+        <script defer src="_js/ui-065.js"></script> 
+</body>
+</html>

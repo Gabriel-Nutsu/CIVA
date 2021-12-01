@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ICONES -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- ESTILOS -->
+        <link rel="stylesheet" href="_css/style-global.css"> 
+        <link rel="stylesheet" href="_css/ui-067.css">
+        <script type="text/javascript" src="_js/ui-067.js"></script>
+
+    
+
+        <!--Adicione ao título o nome da sua página-->
+            <title>CIVA - Painel Unidade</title>
+    </head>
+    <body id="container-manager">
+        <div id="container-menu">
+
+            <div class="profile-info"><!--Parte da foto e dados do usuário-->
+                <div class="photo-profile">
+                    <img src="" alt="">
+                </div>
+                <p class="name-user">Nome Sobrenome</p>
+                <p>Cargo</p>
+            </div>
+            <nav class="menu-sidebar"> <!--Opções do Menu-->
+                <ul>
+                    <li class="item-menu "><i></i><i></i>
+                        <a href="ui-059.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                    </li>
+                    <li class="item-menu active-item-menu"><i></i><i></i>
+                        <a href="ui-065.html"><span class="material-icons">place</span>Gerenciar unidade</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-068.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-069.html"><span class="material-icons">account_circle</span>Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div id="container-main"><!--Não excluir, pois isso modifica a formatação-->
+        
+            <div id="wrapper-main">
+
+                <header class="container-header">
+                    <h1>Painel Unidade</h1>
+                </header>
+
+                <div class="container-middle">
+                    <div class="box-wrapper">
+
+                        <!-- CONTAINER CABEÇALHO -->
+                            <header class="box-header">Dados de unidade</header>
+                        
+                        <!-- CONTAINER DO MEIO -->
+                        <form id="dados-unidade" class="box-middle box-middle-form">
+                            <div class="input-container">
+                        
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" placeholder="Hospital Pan" class="input-default">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="id-unidade">ID unidade</label>
+                                <input type="text" id="id-unidade" placeholder="123456789" class="input-default">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="codigo-postal">Código Postal</label>
+                                <input type="text" id="codigo-postal" placeholder="12345-122" class="input-default">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="estado">Estado</label>
+                                <input type="text" id="estado" placeholder="Rio de Janeiro" class="input-default">
+                            </div>
+
+                            <div class="input-container">
+                                <label for="endereco">Endereço</label>
+                                <input type="text" id="endereco" placeholder="Avenida Rio Branco" class="input-default">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="municipio">Município</label>
+                                <input type="text" id="municipio" placeholder="Niterói" class="input-default">
+                            </div>
+
+                            <div class="input-container">
+                                <label for="locacao">Locação</label>
+                                <input type="text" id="locacao" placeholder="Fixa" class="input-default">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="natureza">Natureza</label>
+                                <input type="text" id="natureza" placeholder="Pública" class="input-default">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="estabelecimento">Estabelecimento</label>
+                                <input type="text" id="estabelecimento" placeholder="Hospital" class="input-default">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="contato">Contato</label>
+                                <input type="text" id="contato" placeholder="5521912345678" class="input-default">
+                            </div>
+                        </form>
+                        
+                        <!-- CONTAINER INFERIOR BOTOES -->
+                            <div class="box-bottom">
+                                <div class="toggle-container">
+                                    <div class="toggle-btn">
+                                        <div class="inner-circle"></div>
+                                        <span class="toggle-name">Ativado</span>
+                                    </div> 
+                                </div>
+                                    <button id="excluir" class="btn-default btn-small d-red">Excluir</button>
+                            </div>
+                            <script src="js/toggle-botton.js"></script>  
+                        </div>
+
+                        <div class="box-wrapper">
+                            <header class="box-header">Box com Tabela</header>
+                            <div class="box-middle box-middle-table">
+                                <table class="table-default">
+                                    <tbody><tr>
+                                        <th>Nome</th>
+                                        <th>Identidade</th>
+                                        <th>Número CIVA</th> 
+                                    </tr>
+                                    <tr>
+                                        <td>Maria Souza da Silva</td>
+                                        <td>123.159.875-05</td>
+                                        <td>BR5521123456789</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maria Souza da Silva</td>
+                                        <td>123.159.875-05</td>
+                                        <td>BR5521123456789</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maria Souza da Silva</td>
+                                        <td>123.159.875-05</td>
+                                        <td>BR5521123456789</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maria Souza da Silva</td>
+                                        <td>123.159.875-05</td>
+                                        <td>BR5521123456789</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maria Souza da Silva</td>
+                                        <td>123.159.875-05</td>
+                                        <td>BR5521123456789</td>
+                                    </tr>
+                                    
+                                </tbody></table>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="container-bottom">
+                    <a href="ui-065.html"><button class="btn-default  d-grey">Voltar</button></a>
+                    <button id="modal" type="submit" form="dados-unidade" class="btn-default  d-coral" id="modalopen2" >Salvar</button>
+                </div> 
+
+
+
+            </div> 
+        </div>
+         
+    </body>
+</html>

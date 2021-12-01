@@ -1,0 +1,52 @@
+.continente{
+    width: 412px;
+    height: 40px;
+    left: 19px;
+    top: 298px;
+    box-sizing: border-box;
+}
+
+/* BUTTONS */
+.btn-default {
+  height: 40px;
+  width: 200px;
+  border-radius: 7px;
+  font-size: 18px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+  select {
+      border: 1px solid #dfdfdf;
+      border-collapse: collapse;
+      width: 200px;
+      border-radius: 7px;
+      color: #133c55;
+      height: 40px;
+  }
+  #botão{
+      
+      font-size: 18px;
+      width: 200px;
+      height: 40px;
+      border: none;
+      border-radius: 7px;
+      padding-right: 7px;
+  
+  
+  }
+  #input-botão {
+      width: 200px;
+      height: 40px;
+      font-size: 18px;
+      color:#ffffff;
+      border-radius: 7px;
+  
+    
+  }
+  .container-bottom {
+      margin-top: 8px;
+      flex-direction: row;
+      display: flex;
+  }

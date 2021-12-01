@@ -1,0 +1,28 @@
+.container-middle p {
+    margin-bottom: 30px;
+}
+
+.container-middle div{
+    margin-top: 30px;
+}
+
+.input-container label {
+    margin-bottom: 4px;
+}
+
+.container-bottom{
+    margin-top: 100px;
+}
+
+.container-bottom button a{
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .d-grey a{
+    color: #606060;
+  }
+  
+  .d-coral a {
+    color: white;
+  }

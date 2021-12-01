@@ -1,0 +1,11 @@
+.menu-vertival-itens li{
+    margin-bottom: 30px;
+}
+
+.menu-vertival-itens li a{
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+       
+    color: #133C55;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ICONES -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="_css/ui-006.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>CIVA - Verificar Email</title>
+    <!-- JS -->
+    <script type="text/javascript" src="_js/ui-006.js"></script>
+    <script type="text/javascript" src="_js/ui-006-base.js"></script>
+</head>
+<body id="container_manager">
+    <div id="container_welcome">
+        <div class="welcome">
+            <h1>Verificar email</h1>
+            <p>Um email será enviado com um código para a verificação.</p>
+            <form id="formulario" method="GET">
+                <div class="input-container">
+                    <label for="">Código</label>
+                    <input type="text" placeholder="000-000" id="code" class="input-default input-blue">
+                </div>
+                <div class="text-reiviar-codigo">
+                    <p>Não recebeu o codigo? <a href="">Reenviar codigo</a></p>
+                </div> 
+                <div> 
+                    <button class="btn-default d-blue" type=submit>Finalizar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="container_main">
+        <img src="_assets/background-login.svg" alt="layout_welcome">
+    </div>
+
+ 
+    
+<!-- 
+    <script>
+    // TESTAR ROLAGEM DA PAGINA
+
+    const repeteText = document.querySelector('.container_middle')
+
+    for(let n = 0; n < 90; n++){
+        const text = document.createElement('p')
+        text.innerText = 'lorem ipsum'
+
+        repeteText.append(text)
+    }
+</script>  --> 
+ 
+
+</body>
+</html>

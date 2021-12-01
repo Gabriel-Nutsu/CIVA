@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ICONES -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel= "stylesheet">
+        <!-- ESTILOS -->
+            <link rel="stylesheet" href="_css/ui-061.css">
+            <link rel="stylesheet" href="_css/ui-061-btn.css">
+            <script src="_js/-ui-050.js"></script>
+
+        <!--Adicione ao título o nome da sua página-->
+            <title>CIVA - Painel Portador CIVA</title>
+
+    </head>
+    <body id="container-manager">
+        <div id="container-menu">
+
+            <div class="profile-info"><!--Parte da foto e dados do usuário-->
+                <div class="photo-profile">
+                    <img src="" alt="">
+                </div>
+                <p class="name-user">Nome Sobrenome</p>
+                <p>Cargo</p>
+            </div>
+            <nav class="menu-sidebar"><!--Opções do Menu-->
+                <ul>
+                    <li class="item-menu active-item-menu"><i></i><i></i>
+                        <a href="ui-059.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                    </li>
+                    <li class="item-menu "><i></i><i></i>
+                        <a href="ui-065.html"><span class="material-icons">place</span>Gerenciar unidade</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-068.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-069.html"><span class="material-icons">account_circle</span>Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="container-main"><!--Não excluir, pois isso modifica a formatação-->
+            <div id="wrapper-main">
+
+                <header class="container-header">
+                    <h3>Painel Unidade</h3>
+                </header>
+
+                <div class="container-middle">
+                    <form action="" id="form-dados">
+                  
+
+                    <div class="box-wrapper">
+
+                        <!-- CONTAINER CABEÇALHO -->
+                            <header class="box-header">Dados Portador CIVA</header>
+                        
+                        <!-- CONTAINER DO MEIO -->
+                        <div class="box-middle box-middle-form">
+                        
+                            <div class="input-container">
+                        
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" placeholder="Maria Souza Almeida" class="input-default" name="nome" id="nome">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="n-civa">Número CIVA</label>
+                                <input type="text" placeholder="BR55123456789" class="input-default" name="n-civa" id="n-civa">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="date-nasc">Data de Nascimento</label>
+                                <input type="text" placeholder="01/01/2002" class="input-default" name="date-nasc" id="date-nasc">
+                            </div>
+                        
+                            <div class="input-container">
+                                <label for="pais">País</label>
+                                <input type="text" placeholder="Rio de Janeiro" class="input-default" name="pais" id="pais">
+                            </div>
+                        </form>
+
+                        </div>
+                        
+                        <!-- CONTAINER INFERIOR BOTOES -->
+                            <div class="box-bottom">
+                                <div class="toggle-container">
+                                    <div class="toggle-btn">
+                                    <div class="inner-circle"></div>
+                                    <span class="toggle-name">Ativado</span>
+                                </div> 
+                                 </div>
+                        
+                            </div>
+                        </div>
+                        <div class="box-wrapper">
+                        <header class="box-header">Gestores Vinculados</header>
+                        <div class="box-middle box-middle-table">
+                            <table class="table-default">
+                                <tbody><tr>
+                                    <th>Vacina</th>
+                                    <th>Laboratorio</th>
+                                    <th>Dose</th>
+                                     <th>País</th>
+                                     <th>Data</th>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Coronavac</td>
+                                    <td>Sinovac</td>
+                                    <td>1 Dose</td>
+                                    <td>Brasil</td>
+                                    <td>11/03/2021</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Coronavac</td>
+                                    <td>Sinovac</td>
+                                    <td>1 Dose</td>
+                                    <td>Brasil</td>
+                                    <td>11/03/2021</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Coronavac</td>
+                                    <td>Sinovac</td>
+                                    <td>1 Dose</td>
+                                    <td>Brasil</td>
+                                    <td>11/03/2021</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Coronavac</td>
+                                    <td>Sinovac</td>
+                                    <td>1 Dose</td>
+                                    <td>Brasil</td>
+                                    <td>11/03/2021</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Coronavac</td>
+                                    <td>Sinovac</td>
+                                    <td>1 Dose</td>
+                                    <td>Brasil</td>
+                                    <td>11/03/2021</td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                    </div>
+
+                </div>   <!-- fechamento da middle -->
+
+                <div class="container-bottom">
+                   
+                    <div class="btn-tabela"> 
+                     
+                        <a href="ui-060.html"><button class="btn-voltar">Voltar</button></a>
+                           
+                    </div> 
+
+                </div>  
+            </div> 
+        </div> 
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+

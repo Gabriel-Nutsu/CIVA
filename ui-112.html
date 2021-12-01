@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ICONES -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <!-- ESTILOS -->
+            <link rel="stylesheet" href="_css/style-global.css">
+            <link rel="stylesheet" href="_css/ui-112.css">
+            <script type="text/javascript" src="_js/ui-112.js"></script>
+
+        <!--Adicione ao título o nome da sua página-->
+            <title>CIVA - Cadastrar Gestor </title>
+    </head>
+    <body id="container-manager">
+        <div id="container-menu">
+
+            <div class="profile-info"><!--Parte da foto e dados do usuário-->
+                <div class="photo-profile">
+                    <img src="" alt="">
+                </div>
+                <p class="name-user">Nome Sobrenome</p>
+                <p>Cargo</p>
+            </div>
+            <nav class="menu-sidebar"><!--Opções do Menu-->
+                <ul>
+                    <li class="item-menu active-item-menu"><i></i><i></i>
+                        <a href="_ui-107.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="_ui-115.html"><span class="material-icons">flag</span>Gerenciar país</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="_ui-120.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="_ui-121.html"><span class="material-icons">vaccines</span>Gerenciar vacina</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="_ui-123.html"><span class="material-icons">account_circle</span>Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="container-main"><!--Não excluir, pois isso modifica a formatação-->
+        
+        <div id="wrapper-main">
+
+            <header class="container-header">
+                <h1>Cadastrar Gestor</h1>
+            </header>
+
+            <div class="container-middle">
+                <div class="box-wrapper">
+
+                    <!-- CONTAINER CABEÇALHO -->
+                        <header class="box-header">Dados gestor</header>
+                    
+                    <!-- CONTAINER DO MEIO -->
+                    <form id="cadastro-gestor" class="box-middle box-middle-form">
+                    
+                        <div class="input-container">
+                    
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" placeholder="Ex: Maria Souza Almeida" class="input-default">
+                        </div>
+                    
+                        <div class="input-container">
+                            <label for="identidade">Identidade</label>
+                            <input type="text" id="identidade" placeholder="000.000.000-00" class="input-default">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="data-nascimento">Data de nascimento</label>
+                            <input type="date" id="data-nascimento" placeholder="00/00/00" class="input-default">
+                        </div>
+                    
+                        <div class="input-container">
+                            <label for="pais-de-origem">Pais de origem</label>
+                            <div class="select-default">
+                                <select id="pais-de-origem">
+                                    <option value="" selected disabled>Selecionar</option>
+                                    <option value="1">Lorem Ipsum</option>
+                                </select>
+                                <span class="material-icons">expand_more</span>
+                            </div>
+                        </div>
+                    
+                        <div class="input-container">
+                            <label for="id-pais">ID País</label>
+                            <input type="text" id="id-pais" placeholder="Ex: 123456789" class="input-default large">
+                        </div>                  
+                        
+                        <div class="input-container">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="Ex: nome@mail.com" class="input-default">
+                        </div>
+                    
+                        <div class="input-container">
+                            <label for="contato">Contato</label>
+                            <input type="text" id="contato" placeholder="Ex: 55+91234-5678" class="input-default">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" placeholder="***************" class="input-default">
+                        </div>
+                    
+                        <div class="input-container">
+                            <label for="confirma-senha">Confirmar</label>
+                            <input type="password" id="confirma-senha"placeholder="***************" class="input-default">
+                        </div>
+                    
+                    </form>
+
+            </div>
+
+            <div class="container-bottom">
+                <a href="ui-111.html"><button class="btn-default  d-grey">Voltar</button></a>
+                <button type="submit" form="cadastro-gestor" class="btn-default  d-coral">Cadastrar</button>
+            </div>  
+
+        </div> 
+        </div> 
+    </body>
+</html>

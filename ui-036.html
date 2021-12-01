@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ICONES -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <!-- ESTILOS -->
+            <link rel="stylesheet" href="_css/style.css">
+            <link rel="stylesheet" href="_css/ui-036.css">
+            <link rel="shortcut icon" href="_assets/favicon.ico" type="image/x-icon">
+
+        <!-- SCRIPTS -->
+            <script src="_js/scripthernani.js"></script>  
+
+
+        <!--Adicione ao título o nome da sua página-->
+            <title>CIVA - Painel Vacinação</title>
+    </head>
+    <body id="container-manager">
+        <div id="container-menu">
+
+            <div class="profile-info"><!--Parte da foto e dados do usuário-->
+                <div class="photo-profile">
+                    <img src="" alt="">
+                </div>
+                <p class="name-user">Nome Sobrenome</p>
+                <p>Cargo</p>
+            </div>
+            <nav class="menu-sidebar"><!--Opções do Menu-->
+                <ul>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-028.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                    </li>
+                    <li class="item-menu active-item-menu"><i></i><i></i>
+                        <a href="ui-035.html"><span class="material-icons">contact_page</span>Gerenciar vacinação</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-037.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                    </li>
+                    <li class="item-menu "><i></i><i></i>
+                        <a href="ui-038.html"><span class="material-icons">account_circle</span>Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        
+        </div>
+
+        <div id="container-main"> <!--Não excluir, pois isso modifica a formatação-->
+            <header class="container-header">
+                <h3>Painel Vacinação</h3>    
+            </header>
+            <div id="wrapper-main">
+                <div class="box-wrapper">
+
+                    <!-- CONTAINER CABEÇALHO -->
+                    <header class="box-header">Dados vacinação</header>
+                    <div class="container-middle">
+                        <form action="" id="form1">
+                            <div class="box-middle box-middle-form">
+                                <div class="input-container">
+                            
+                                    <label for="">ID vacinação</label>
+                                    <input type="text" placeholder="123456789" class="input-default" id="vaccination-id">
+                                </div>
+                            
+                                <div class="input-container">
+                                    <label for="">Dose</label>
+                                    <input type="text" placeholder="2ª Dose" class="input-default" id="shot-num">
+                                </div>
+                            
+                                <div class="input-container">
+                                    <label for="">Vacina</label>
+                                    <input type="text" placeholder="Coronavac" class="input-default" id="vaccine">
+                                </div>
+                            
+                                <div class="input-container">
+                                    <label for="">Laboratório</label>
+                                    <input type="text" placeholder="Sinovac" class="input-default" id="lab">
+                                </div>
+                                <div class="input-container">
+                            
+                                    <label for="">Data de Aplicação</label>
+                                    <input type="text" placeholder="00/00/00" class="input-default" id="app-date">
+                                </div>
+                            
+                                <div class="input-container">
+                                    <label for="">País de Origem</label>
+                                    <input type="text" placeholder="Brasil" class="input-default" id="homeland">
+                                </div>
+                            
+                                <div class="input-container">
+                                    <label for="">ID Ponto de vacinação</label>
+                                    <input type="text" placeholder="123456789" class="input-default" id="app-place-id">
+                                </div>
+                            
+                                <div class="input-container">
+                                    <label for="">Ponto de vacinação</label>
+                                    <input type="text" placeholder="Hospital Pan" class="input-default" id="app-place">
+                                </div>
+                                <div class="input-container">
+                                    <label for="">N° CIVA Profissional</label>
+                                    <input type="text" placeholder="BR55123456789" class="input-default" id="professional-id">
+                                </div>
+                            
+                                <div class="input-container">
+                                    <label for="">Lote</label>
+                                    <input type="text" placeholder="45181896" class="input-default" id="serial-num">
+                                </div>
+                            
+                            </div>
+                            
+                            <!-- CONTAINER INFERIOR BOTOES -->
+                                <div class="box-bottom">
+                                    <div class="toggle-container">
+                                        <div class="toggle-btn">
+                                            <div class="inner-circle"></div>
+                                            <span class="toggle-name">Ativado</span>
+                                        </div>
+                                        </div>
+                                        <button type="button" class="btn-default btn-small d-red">Excluir</button>
+                                </div>
+                        </form>
+                        </div>
+                    </div>
+                    <div class="box-wrapper">
+
+                        <!-- CONTAINER CABEÇALHO -->
+                        <header class="box-header">Dados Portador</header>
+                        <div class="container-middle">
+                            <div class="box-middle box-middle-form">
+                
+                                <!-- <form action="|"> -->
+                                    <div class="input-container" >
+                                        <label for="">Nome Completo</label>
+                                        <input type="text" placeholder="Maria Souza Almeida" class="input-default" readonly>
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="">Número CIVA</label>
+                                        <input type="text" placeholder="BR5513456789" class="input-default" readonly>
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="">Data de Nascimento</label>
+                                        <input type="text" placeholder="29/07/2021" class="input-default" readonly>
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="">Identidade</label>
+                                        <input type="text" placeholder="123.456.789.01" class="input-default" readonly>
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="">Endereço</label>
+                                        <input type="text" placeholder="Avenida Rio Branco" class="input-default" readonly>
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="">País de Origem</label>
+                                        <input type="text" placeholder="Brasil" class="input-default" readonly>
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="">E-mail</label>
+                                        <input type="text" placeholder="maria@gmail.com" class="input-default" readonly>
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="">Contato</label>
+                                        <input type="text" placeholder="5521912345678" class="input-default" readonly>
+                                    </div>
+                                <!-- </form> -->
+                            </div>
+                            
+                        
+                        </div>
+                         
+                </div>
+                
+            </div>
+            <div class="container-bottom ">
+                <div class="btns">
+                    <a href="ui-035.html"><button class="btn-default  d-grey" type="button">Voltar</button></a>
+                    <button form="form1" class="btn-default  d-coral">Salvar</button>
+                </div>
+            </div>  
+        </div> 
+    </body>
+</html>

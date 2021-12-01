@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONES -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+    rel="stylesheet">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="_css/ui-088.css">
+    <script type="text/javascript" src="_js/check-form.js"></script>
+    <script type="text/javascript" src="_js/ui-088.js"></script>
+    <script type="text/javascript" src="_js/inputs-form.js"></script>
+    <script type="text/javascript" src="_js/toggle-botton.js"></script>
+    <title>CIVA - Painel profissional de saúde </title>
+    <style>
+        .space{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0px;
+        }
+        .space > div{
+            margin: 5px;
+        }
+    
+    </style>
+ 
+
+</head>
+<body id="container-manager">
+
+<div id="container-menu">
+    <div id="container-menu">
+
+        <div class="profile-info"><!--Parte da foto e dados do usuário-->
+            <div class="photo-profile">
+                <img src="" alt="">
+            </div>
+            <p class="name-user">Nome Sobrenome</p>
+            <p>Cargo</p>
+        </div>
+        <nav class="menu-sidebar"><!--Opções do Menu-->
+            <ul>
+                <li class="item-menu active-item-menu"><i></i><i></i>
+                    <a href="#" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-093.html"><span class="material-icons">place</span>Gerenciar unidade</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-096.html"><span class="material-icons">contact_page</span>Gerenciar vacinação</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-098.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-099.html"><span class="material-icons">vaccines</span>Gerenciar vacina</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-102.html"><span class="material-icons">account_circle</span>Perfil</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div id="container-main">
+ 
+<div id="wrapper-main">
+
+
+
+<section class="space">
+
+<div class="box-container">
+ 
+
+
+</div>
+
+</section>
+<!--ISAAC, O INSANO-->
+<form name="form" id=>
+<section class="space">
+
+    <div class="box-container">
+        <header class="container-header">
+            <h3>Painel Profissional de Saúde</h3>
+        </header>
+<div class="box-wrapper">
+
+<!-- CONTAINER CABEÇALHO -->
+    <header class="box-header">Dados Profissional de saúde</header>
+
+<!-- CONTAINER DO MEIO -->
+<div class="box-middle box-middle-form">
+                        
+    <div class="input-container">
+
+        <label for="name">Nome completo</label>
+        <input type="text" placeholder="Maria Souza Almeida" class="input-default" name="name" id="name" value="">
+    </div>
+
+    <div class="input-container">
+        <label for="civa">Número CIVA</label>
+        <input type="text" placeholder="BR5513456789" class="input-default" name="civa" id="civa" value="">
+    </div>
+
+    <div class="input-container">
+        <label for="date">Data de nascimento</label>
+        <input type="date" placeholder="29/07/2021  " class="input-default" name="date" id="date" value="">
+    </div>
+
+    <div class="input-container">
+        <label for="ident">Identidade</label>
+        <input type="text" placeholder="123.456.789.01" class="input-default" name="ident" id="ident" value="">
+    </div>
+
+    <div class="input-container">
+        <label for="pais">País de origem</label>
+        <input type="text" placeholder="Brasil" class="input-default" name="pais" id="pais" value="">
+    </div>
+
+    <div class="input-container">
+        <label for="">CRM</label>
+        <input type="text" placeholder="1234/RJ" class="input-default" name="crm" id="crm" value="">
+    </div>
+
+    <div class="input-container">
+        <label for="">Email</label>
+        <input type="text" placeholder="maria@gmail.com" class="input-default" name="mail" id="mail" value="">
+    </div>
+
+    <div class="input-container">
+        <label for="contact">Contato</label>
+        <input type="text" placeholder="5521912345678" class="input-default" name="contact" id="contact" value="">
+    </div>
+
+
+</div>
+
+<!-- CONTAINER INFERIOR BOTOES -->
+    <div class="box-bottom">
+        <div class="toggle-container">
+            <div class="toggle-btn">
+                <div class="inner-circle"></div>
+                <span class="toggle-name">Ativado</span>
+            </div> 
+            </div>
+            
+           
+            <button class="btn-default btn-small d-grey-out" style="width: initial">  <a href="ui-089.html"> Redefinir senha</a></button>
+            
+            <button class="btn-default btn-small d-red">Excluir</button>
+    </div>
+</div>
+
+ 
+    <div class="box-wrapper">
+        <header class="box-header">Unidades vinculadas</header>
+        <div class="box-middle box-middle-table">
+            <table class="table-default">
+                <tr>
+                    <th>Nome</th>
+                    <th>Estado</th>
+                    <th>CP</th>
+                    <th>Identificador</th>
+                    
+                </tr>
+                <tr>
+                    <td>Hopital Pan</td>
+                    <td>Rio de Janeiro</td>
+                    <td>12016-102</td>
+                    <td>215648</td>
+                </tr>
+                <tr>
+                    <td>Hopital Pan</td>
+                    <td>Rio de Janeiro</td>
+                    <td>12016-102</td>
+                    <td>215648</td>
+                </tr>
+                <tr>
+                    <td>Hopital Pan</td>
+                    <td>Rio de Janeiro</td>
+                    <td>12016-102</td>
+                    <td>215648</td>
+                </tr>
+               
+            </table>
+        </div>
+       
+
+    </div>
+
+</div>
+
+</section>
+
+    <section class="space"> 
+        
+
+        
+
+        <div>
+            <a href="ui-086.html"><button class="btn-default  d-grey" type="button">Voltar</button></a>
+        </div>
+        
+
+        <div>
+            <button type="submit" class="btn-default  d-coral" onclick="return validar()">Salvar</button>
+        </div>
+        
+
+    </section>
+</form>
+</div> 
+
+
+<script src="js/toggle-botton.js"></script>  
+
+</body>
+</html>

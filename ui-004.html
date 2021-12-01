@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ICONES -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="_css/ui-004.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>CIVA - Login</title>
+    <script type="text/javascript" src="_js/ui-004.js"></script>
+</head>
+
+<body id="container_manager">
+    <div id="container_welcome">
+        <div class="welcome">
+            <h1>Bem Vindo!</h1>
+            <p>Fazer Login</p>
+            <form id="form-container">
+                <div class="input-container">
+                    <label for="">Email ou Número CIVA</label>
+                    <input type="text" id="user" placeholder="usuario@mail.com" class="input-default input-blue" />
+                </div>
+
+                <div class="input-container">
+                    <label for="">Senha</label>
+                    <input type="password" id="password" placeholder="***************" class="input-default input-blue" />
+                </div>
+
+                <button id="btn-login" class="btn-default d-blue">Entrar</button>
+
+            </form>
+            <div class="text-esqueceu-senha">
+                <span><a href="ui-008.html">Esqueceu a senha?</a></span><span><a href="ui-011.html">Recuperar CIVA</a></span>
+            </div>
+
+            <div class="btn-validar-qr-code">
+                <a href="ui-012.html"><button>
+            <img src="_assets/qr_code_scanner.svg" />VALIDAR CIVA
+          </button></a>
+            </div>
+
+            <!-- <div class="modalcad" id="modalcad" tabindex="-1">
+                <a href="#" class="modalcad-tamanho" aria-label="Fechar"></a>
+                <div class="modalcad-conteudo">
+                    <div class="modalcad-x">
+                        <a href="#" class="modalcad-botao" aria-label="Fechar"><span class="material-icons">clear</span></a>
+                    </div>
+                    <div class="modalcad-visitante">
+                        <h1>Pagina do visitante</h1>
+                        <p>Escolha a opção desejada</p>
+                        <a href="#modal-validar-certificado"><button class="btn-grey-validation">
+                Validar certificado
+              </button></a>
+                        <button class="btn-grey-validation">Pesquisar certificado</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-validar-certificado" id="modal-validar-certificado" tabindex="-1">
+                <a href="#" class="modal-tamanho" aria-label="Fechar"></a>
+                <div class="modal-conteudo-validar-certificado">
+                    <div class="modal-container-one">
+                        <h1>Validar certificado</h1>
+                        <p>Não consegue escanear? digite o codigo de autententicação.</p>
+                        <form id="form-modal" action="#modal-ui13-2">
+                            <input id="cod-autenticacao" placeholder="Digite o codigo de autenticação" />
+                            <button id="btn-return" class="btn-default d-blue">Validar</button>
+                        </form>
+                        <button class="btn-default d-grey" value="Voltar" onClick="history.go(-1)">Voltar</button>
+                    </div>
+                    <div class="modal-container-two">
+                        <img src="./_assets/img_modal_ui004.svg" alt="img_modal_validar_certificado" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal-ui13-2" id="modal-ui13-2" tabindex="-1">
+                <a href="#" class="modal-ui13-2-tamanho" aria-label="Fechar"></a>
+                <div class="modal-ui13-2-conteudo">
+                    <div class="modal-ui13-2-x">
+                        <a href="#" class="modal-ui13-2-botao" aria-label="Fechar"><span class="material-icons">clear</span></a>
+                    </div>
+                    <div class="modal-ui13-2-corpo">
+                        <span class="primeiro-span">Certificado</span>
+                        <div class="wrap-cima">
+                            <span class="texto-pequeno">Nome</span>
+                            <span class="esc'uro-bold">Rodrigo Carlos</span>
+                        </div>
+                        <div class="wrap-meio">
+                            <div class="wrap-meio-e">
+                                <div>
+                                    <span class="texto-pequeno">Identidade</span>
+                                    <span class="escuro-bold">123.123.123-12</span>
+                                </div>
+                                <div>
+                                    <span class="texto-pequeno">CIVA</span>
+                                    <span class="escuro-bold">BR55123456789</span>
+                                </div>
+                            </div>
+                            <div class="wrap-meio-d">
+                                <div>
+                                    <span class="texto-pequeno">Data de Nascimento</span>
+                                    <span class="escuro-bold">123.123.123-12</span>
+                                </div>
+
+                                <div>
+                                    <span class="texto-pequeno">Pais de origem</span>
+                                    <span class="escuro-bold">Brasil</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap-baixo">
+                            <span class="wrap-baixo-span1">STATUS</span>
+                            <span class="wrap-baixo-span2">IMUNIZADO</span>
+                            <a href="#" aria-label="Fechar"><button class="btn-default  d-blue">Continuar</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="text-criar-conta">
+                <p>Não tem uma conta ainda?<a href="ui-005.html">Criar conta</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="container_main">
+        <img src="_assets/background-login.svg" alt="layout_welcome" />
+    </div>
+
+    <!-- 
+    <script>
+    // TESTAR ROLAGEM DA PAGINA
+
+    const repeteText = document.querySelector('.container_middle')
+
+    for(let n = 0; n < 90; n++){
+        const text = document.createElement('p')
+        text.innerText = 'lorem ipsum'
+
+        repeteText.append(text)
+    }
+</script>  -->
+</body>
+
+</html>

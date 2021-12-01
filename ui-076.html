@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ICONES -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <!-- ESTILOS -->
+            <link rel="stylesheet" href="_css/style.css">
+            <link rel="stylesheet" href="_css/ui-076.css">
+            <link rel="shortcut icon" href="_assets/favicon.ico" type="image/x-icon">
+
+        <!-- SCRIPTS -->
+            <script defer src="_js/ui-108.js"></script>  
+
+        <!--Adicione ao título o nome da sua página-->
+            <title>CIVA - Painel Dados Gestor</title>
+    </head>
+    <body id="container-manager">
+        <div id="container-menu">
+
+            <div class="profile-info"><!--Parte da foto e dados do usuário-->
+                <div class="photo-profile">
+                    <img src="" alt="">
+                </div>
+                <p class="name-user">Nome Sobrenome</p>
+                <p>Cargo</p>
+            </div>
+            <nav class="menu-sidebar"><!--Opções do Menu-->
+                <ul>
+                    <li class="item-menu active-item-menu"><i></i><i></i>
+                        <a href="ui-074.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-093.html"><span class="material-icons">place</span>Gerenciar unidade</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-096.html"><span class="material-icons">contact_page</span>Gerenciar vacinação</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-098.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-099.html"><span class="material-icons">vaccines</span>Gerenciar vacina</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-102.html"><span class="material-icons">account_circle</span>Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        
+        </div>
+
+        <div id="container-main"> <!--Não excluir, pois isso modifica a formatação-->
+            <header class="container-header">
+                <h3>Painel Gestor</h3> 
+            </header>
+            <div id="wrapper-main">
+                
+                    <div class="box-wrapper">
+
+                        <!-- CONTAINER CABEÇALHO -->
+                        <header class="box-header">Dados Gestor</header>
+                        <div class="container-middle">
+                            <form action="" id="form1">
+                                <div class="box-middle box-middle-form">
+                                    <div class="input-container">
+                                        <label for="">Nome Completo</label>
+                                        <input type="text" placeholder="Maria Souza Almeida" class="input-default" id="name">
+                                    </div>
+                                
+                                    <div class="input-container">
+                                        <label for="">CIVA</label>
+                                        <input type="text" placeholder="BR55180271892" class="input-default" id="civa">
+                                    </div>
+                                
+                                    <div class="input-container">
+                                        <label for="">Data de Nascimento</label>
+                                        <input type="text" placeholder="01/01/2001" class="input-default" id="birthdate">
+                                    </div>
+                                
+                                    <div class="input-container">
+                                        <label for="">Identidade</label>
+                                        <input type="text" placeholder="187.090.172-23" class="input-default" id="id">
+                                    </div>
+                                    <div class="input-container">
+                                
+                                        <label for="">País</label>
+                                        <input type="text" placeholder="Brasil" class="input-default" id="country">
+                                    </div>
+                                
+                                    <div class="input-container">
+                                        <label for="">Contato</label>
+                                        <input type="text" placeholder="5521989182091" class="input-default" id="contact">
+                                    </div>
+                                
+                                    <div class="input-container">
+                                        <label for="">Email</label>
+                                        <input type="text" placeholder="maria@gmail.com" class="input-default" id="mail">
+                                    </div>
+                                
+                                    <div class="input-container">
+                                        <label for="">ID País</label>
+                                        <input type="text" placeholder="5512345" class="input-default" id="country-id">
+                                    </div>                                
+                                
+                                </div>
+                            </form>
+                            
+                            
+                            <!-- CONTAINER INFERIOR BOTOES -->
+                                <div class="box-bottom">
+                                    <div class="toggle-container">
+                                        <div class="toggle-btn">
+                                            <div class="inner-circle"></div>
+                                            <span class="toggle-name">Ativado</span>
+                                        </div> 
+                                    </div>
+                                    <a href="ui-077.html"><button type="button"class="btn-default btn-small d-grey-out" style="width: initial;">Redefinir senha</button></a>
+                                    <button class="btn-default btn-small d-red">Excluir</button>
+                                </div>
+                        </div>
+                    </div>     
+                    <div class="box-wrapper">
+                            <header class="box-header">
+                                Unidades vinculados
+                            </header>
+                            <div class="box-middle box-middle-table">
+                                <table class="table-default">
+                                    <tbody><tr>
+                                        <th>Nome</th>
+                                        <th>Estado</th>
+                                        <th>CEP</th>
+                                        <th>Identificador</th>                                       
+                                    </tr>
+                                    <tr>
+                                        <td>Hospital Pan</td>
+                                        <td>Rio de Janeiro</td>
+                                        <td>12016-102</td>
+                                        <td>215648</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hospital Pan</td>
+                                        <td>Rio de Janeiro</td>
+                                        <td>12016-102</td>
+                                        <td>215648</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hospital Pan</td>
+                                        <td>Rio de Janeiro</td>
+                                        <td>12016-102</td>
+                                        <td>215648</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hospital Pan</td>
+                                        <td>Rio de Janeiro</td>
+                                        <td>12016-102</td>
+                                        <td>215648</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hospital Pan</td>
+                                        <td>Rio de Janeiro</td>
+                                        <td>12016-102</td>
+                                        <td>215648</td>
+                                    </tr>
+                                                                
+                                </tbody></table>
+                            </div>
+                    </div>
+            </div> 
+            <div class="container-bottom ">
+                <div class="btns">
+                    <a href="ui-074.html"><button class="btn-default  d-grey">Voltar</button></a>
+                    <button form="form1" class="btn-default d-coral">Salvar</button>
+                </div>   
+            </div>
+        
+        
+        </div> 
+    </body>
+</html>

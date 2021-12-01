@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="_css/ui-065.css">
+    <link rel="shotcut icon" href="_assets/favicon.ico" type="image/x-icon">
+    <style>
+        div.manager-bar {
+            display:flex;
+            height:40px;
+            width:1075px;
+            align-items:center;
+            justify-content:space-between;
+            position:relative;
+        }
+        div.manager-bar p {
+            display:inline;
+            justify-content:space-between;
+            margin-left:32px;
+            cursor:pointer;
+        }
+        div.manager-bar p:last-child {
+            margin-left:50px;
+        }
+        div.manager-bar span.icon-1 {
+            left:5px;
+            top:10px;
+            position:absolute;
+            cursor:pointer;
+        }
+        div.manager-bar span.icon-2{
+            left:190px;
+            top:10px;
+            position:absolute;
+            cursor:pointer;
+        }
+        div.pagination-nav {
+            margin-left:350px;
+        }
+        .large-input{
+            width: 100%;
+        }
+    </style>
+    <title>CIVA - Gerenciar Unidade</title>
+</head>
+<body id="container-manager">
+        <div id="container-menu">
+            <div class="profile-info"><!--Parte da foto e dados do usuário-->
+                <div class="photo-profile">
+                    <img src="" alt="">
+                </div>
+                <p class="name-user">Nome Sobrenome</p>
+                <p>Cargo</p>
+            </div>
+            <nav class="menu-sidebar"> <!--Opções do Menu-->
+                <ul>
+                    <li class="item-menu active-item-menu"><i></i><i></i>
+                        <a href="ui-059.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                    </li>
+                    <li class="item-menu "><i></i><i></i>
+                        <a href="ui-065.html"><span class="material-icons">place</span>Gerenciar unidade</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-068.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-069.html"><span class="material-icons">account_circle</span>Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+        <div id="container-main">
+            <div id="wrapper-main">
+               <header class="container-header">
+                   <h2>Cadastrar Supervisor</h2>
+               </header>
+               <header class="container-header">
+               </header>
+               <div class="container-middle">
+                   <form action="" method="" id="form1">
+                   <div class="box-wrapper">
+                       <!-- CONTAINER CABEÇALHO -->
+                           <header class="box-header">Dados Supervisor</header>
+                       <!-- CONTAINER DO MEIO -->
+                       <div class="box-middle box-middle-form">    
+                           <div class="input-container">                    
+                               <label for="">Nome Completo</label>
+                               <input type="text" placeholder="Ex: Maria Souza Almeida" class="input-default" id="nome" autocomplete="off">
+                           </div>                   
+                           <div class="input-container">
+                               <label for="">Identidade</label>
+                               <input type="text" placeholder="128.123.288-44" class="input-default" id="id" autocomplete="off">
+                           </div>
+                            <div class="input-container">
+                                <label for="">Data de Nascimento</label>
+                                <input type="text" placeholder="01/01/2001" class="input-default" id="birthdate" autocomplete="off">
+                            </div>
+                             
+                                <div class="input-container">  
+                                    <label for="homeland">País de Origem</label>
+                                        <select id="homeland" class="input-default">
+                                            <option value="" selected disabled>País de Origem</option>
+                                            <option value="Brasil">Brasil</option>
+                                            <option value="Mocambique">Moçambique</option>
+                                            <option value="Angola">Angola</option>
+                                        </select>
+                                </div> 
+                            
+                            <div class="input-container large-input">
+                               <label for="point-id">ID Ponto</label>
+                               <input type="text" placeholder="1928190" class="input-default large-input" id="point-id">
+                            </div>                    
+                            <div class="input-container">
+                               <label for="">E-mail</label>
+                               <input type="text" placeholder="Ex: maria@gmail.com" class="input-default" id="mail">
+                            </div> 
+                            <div class="input-container">
+                                <label for="">Contato</label>
+                                <input type="text" placeholder="Ex: 5521912345678" class="input-default" id="contato">
+                            </div>
+                            <div class="input-container">
+                                <label for="">Senha</label>
+                                <input type="text" placeholder="Ex: ********" class="input-default" id="password">
+                            </div>
+                            <div class="input-container">
+                                <label for="">Confirmação</label>
+                                <input type="text" placeholder="Ex: ********" class="input-default" id="password2">
+                            </div>
+                       
+                           
+                          
+                                           
+                       </div>                    
+                   </div>
+                   </form>
+               </div>
+               <div class="container-bottom">
+                   <a href="ui-059.html"><button class="btn-default d-grey" id="rtrn-page">Voltar</button></a>
+                   <button form="form1" class="btn-default d-coral" type="submit" >Cadastrar</button>
+               </div>
+            </div> 
+           </div> 
+        <script defer src="_js/ui-108.js"></script> 
+</body>
+</html>

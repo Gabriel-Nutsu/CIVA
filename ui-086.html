@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- ICONES -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <!-- ESTILOS -->
+        <link rel="stylesheet" href="_css/ui-086.css">
+        <!-- JAVASCRIPT -->
+        <script type="text/javascript" src="_js/ui-086.js"></script>
+        <!-- CDN BOOTSTRAP -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+        <title>CIVA - Gerenciar profissional de saúde</title>
+
+    </head>
+    <body id="container-manager">
+
+        <div id="container-menu">
+            <div class="profile-info"><!--Parte da foto e dados do usuário-->
+                <div class="photo-profile">
+                    <img src="" alt="">
+                </div>
+                <p class="name-user">Nome Sobrenome</p>
+                <p>Cargo</p>
+            </div>
+            <nav class="menu-sidebar"><!--Opções do Menu-->
+                <ul>
+                    <li class="item-menu active-item-menu"><i></i><i></i>
+                        <a href="#" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-093.html"><span class="material-icons">place</span>Gerenciar unidade</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-096.html"><span class="material-icons">contact_page</span>Gerenciar vacinação</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-098.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-099.html"><span class="material-icons">vaccines</span>Gerenciar vacina</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-102.html"><span class="material-icons">account_circle</span>Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="container-main">
+        
+            <div id="wrapper-main">
+
+                <header class="container-header">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h1>Gerenciar usuários</h1>
+                        </div>
+                        <div class="col-sm-7">
+                            <nav >
+                                <ul class="menu-nav">
+                                    <li><a href="ui-074.html">Gestor</a></li>
+                                    <li><a href="ui-078.html">Gerente</a></li>
+                                    <li><a href="ui-082.html">Supervisor</a></li>
+                                    <li class="active-menu-nav"><a href="ui-086.html">Profissional de saúde</a></li>
+                                    <li><a href="ui-090.html">Portador CIVA</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </header>
+                <header class="container-header">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <nav>
+                                <ul class="menu-nav2">
+                                    <li><a href="ui-087.html"><span class="material-icons">person_add_alt_1</span>Cadastrar profissinal de saúde</a></li>
+                                    <li><a href=""><span class="material-icons">download</span>Exportar usuário</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="search-wrap">
+                                <div class="search-box">
+                                    <input type="text" placeholder="Pesquisar usuario">
+                                    <div class="btn-common d-coral">
+                                        <span class="material-icons ">search</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="container-middle">
+                    <table class="table-default">
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>Nome</th>
+                            <th>Identidade</th>
+                            <th>Data</th>
+                            <th>Número CIVA</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Samuel Claudino da Silva</td>
+                            <td>561576891</td>
+                            <td>10/09/2021</td>
+                            <td>BR55123456789</td>
+                            <td><a href="ui-088.html"><button class="btn-table-manage">Gerenciar</button></a></td>
+                        </tr>
+                
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Samuel Claudino da Silva</td>
+                            <td>561576891</td>
+                            <td>10/09/2021</td>
+                            <td>BR55123456789</td>
+                            <td>  <a href="ui-088.html"><button  class="btn-table-manage">Gerenciar</button> </a> </td>
+                        </tr>
+                         
+                    </table>
+                </div>
+
+                <div class="container-bottom">
+                    <div class="pagination-nav">
+                        <a href=""><span class="material-icons">arrow_back_ios_new</span></a> 
+                        <a class="active-pagination" href="">1</a>
+                        <a href="#">2</a> 
+                        <a href="#">3</a> 
+                        <a href="#">4</a>
+                        <a href="#" class="desable-pagination">...</a>
+                        <a href="#">10</a>
+                        <a href="#"><span class="material-icons">arrow_forward_ios</span></a> 
+                   </div>
+                </div>  
+
+            </div>
+        </div> 
+
+
+    </body>
+</html>

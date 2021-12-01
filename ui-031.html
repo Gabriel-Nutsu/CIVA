@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/ui-031_favicon_managers.svg" type="image/x-icon">
+    <link rel="stylesheet" href="_css/ui-031.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet">
+    <title>CIVA - Cadastrar nova vacinação</title>
+</head>
+<body id="container-manager">
+
+    <div id="container-menu">
+        <div class="profile-info">
+            <div class="photo-profile">
+            <img src="img/ui-031_default_user.svg" alt="">
+            </div>
+            <p class="name-user">Nome Sobrenome</p>
+            <p>Cargo</p>
+        </div>
+        <nav class="menu-sidebar">
+            <ul>
+                <li class="item-menu active-item-menu"><i></i><i></i>
+                    <a href="#" class="btn"><span class="material-icons-round">people_alt</span>Gerenciar usuário</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-035.html"><span class="material-icons-round">contact_page</span>Gerenciar vacinação</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-037.html"><span class="material-icons-round">assessment</span>Painel relatório</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-038.html"><span class="material-icons-round">account_circle</span>Perfil</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="container-main">
+     <div id="wrapper-main">
+        
+        <header class="container-header">
+            <h3>Cadastrar nova vacinação</h3>
+        </header>
+    
+        <!-- CONTAINER MIDDLE -->
+        <div class="container-middle">
+            <div class="box-container">
+                <!-- BOX LEFT -->
+                <div class="box-wrapper">
+             
+                    <header class="box-header">Dados Vacinação</header>
+ 
+                <form class="box-middle box-middle-form" id="form-register-vaccine">
+                
+                    <div class="input-container">
+                        <label for="">Laboratório</label>
+                          <div class="select-default">
+                            <select required id="laboratory">
+                                <option value="" selected disabled>Selecionar</option>
+                                <option value="1">Item 1</option>
+                                <option value="2">Item 2</option>
+                                <option value="3">Item 3</option>
+                            </select>
+                            <span class="material-icons-round icon-select">expand_more</span>
+                          </div>
+                        </div>
+                    
+                    <div class="input-container">
+                        <label for="">Vacina</label>
+                          <div class="select-default">
+                            <select required id="vaccine">
+                                <option value="" selected disabled>Selecionar</option>
+                                <option value="1">Item 1</option>
+                                <option value="2">Item 2</option>
+                                <option value="3">Item 3</option>
+                            </select>
+                            <span class="material-icons-round icon-select">expand_more</span>
+                          </div>
+                        </div>
+
+                    <div class="input-container">
+                        <label for="">Número da dose</label>
+                          <div class="select-default">
+                            <select required id="dose-number">
+                                <option value="" selected disabled>Selecionar</option>
+                                <option value="1">Item 1</option>
+                                <option value="2">Item 2</option>
+                                <option value="3">Item 3</option>
+                            </select>
+                            <span class="material-icons-round icon-select">expand_more</span>
+                          </div>
+                        </div>
+                    
+
+                    <div class="input-container">
+                        <label for="">Data de aplicação</label>
+                        <input type="date" placeholder="Ex: Butantan" class="input-default" id="application-date">
+                    </div>
+                
+                    <div class="input-container max-width">
+                        <label for="">Lote</label>
+                        <input type="text" placeholder="Ex: Butantan" class="input-default max-width" id="batch">
+                    </div>
+                    
+ 
+
+                </form>
+                </div>
+ 
+            </div>
+    
+     </div> 
+     <!-- BUTTONS -->
+     <div class="container-bottom">
+        <a href="ui-029.html"><button class="btn-default d-grey">Voltar</button></a>
+        <button class="btn-default d-coral" form="form-register-vaccine">Cadastrar</button>
+    </div>  
+    </div> 
+    
+     
+    <script src="_js/ui-031.js"></script>  
+     
+    
+    </body>
+</html>

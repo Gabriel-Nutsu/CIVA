@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONES -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="_css/ui-100.css">
+
+    <!--Adicione ao título o nome da sua página-->
+    <title>CIVA - Cadastrar Vacina</title>
+</head>
+<body id="container-manager">
+    <div id="container-menu">
+
+        <!--Parte da foto e dados do usuário-->
+        <div class="profile-info">
+            <div class="photo-profile">
+                <img src="" alt="">
+            </div>
+            <p class="name-user">Nome e Sobrenome</p>
+            <p>Gestor</p>
+        </div>
+
+        <!--Opções do Menu-->
+        <nav class="menu-sidebar">
+            <ul>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-037.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-093.html"><span class="material-icons">place</span>Gerenciar unidade</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-096.html"><span class="material-icons">contact_page</span>Gerenciar vacinação</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-098.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                </li>
+                <li class="item-menu  active-item-menu"><i></i><i></i>
+                    <a href="ui-099.html"><span class="material-icons">vaccines</span>Gerenciar vacina</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-102.html"><span class="material-icons">account_circle</span>Perfil</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--Não excluir, pois isso modifica a formatação-->
+    <div id="container-main"> 
+
+        <div id="wrapper-main">
+            <div class="container-header">
+                <h1>Cadastrar Vacina</h1>
+            </div>
+               
+            
+            <div class="container-middle">
+                <div class="box-wrapper">
+                    <header class="box-header">Dados da Dose</header>
+                    
+                    <form id="formulario">
+                        <div class="box-middle box-middle-form">
+                            <div class="input-container">
+                                <label for="laboratorio">Laboratório</label>
+                                <input type="text" name="laboratorio" placeholder="Ex. Maria Souza Almeida" class="input-default" id="laboratorio">
+                                <label for="data">Data</label>
+                                <input type="date" name="data" class="input-default" id="data">
+                                <label for="dose">Número da dose</label>
+                                <div class="select-default">
+                                    <select name="dose" id="dose">
+                                        <option selected disabled value="">Selecione</option>
+                                        <option value="1">Primeira</option>
+                                        <option value="2">Segunda</option>
+                                        <option value="3">Reforço</option>
+                                    </select>
+                                    <span class="material-icons">expand_more</span>
+                                </div>
+                            </div>
+                    </div>
+                </div>    
+                    <a href="ui-099.html"><button type="button" name="voltar" class="btn-default  d-grey">Voltar</button></a>
+                    <input type="submit" name="cadastrar" id="salvar" class="btn-default  d-coral" style="width: initial;" value="Cadastrar">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script  src="_js/ui-100.js"></script>
+</body>
+</html>

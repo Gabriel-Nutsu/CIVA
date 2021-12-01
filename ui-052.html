@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONES -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel= "stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+    rel="stylesheet">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="_css/ui-052.css">
+    <link rel="stylesheet" href="_css/ui-052-btn.css">
+    <script type="text/javascript" src="_js/check-form.js"></script>
+    <script type="text/javascript" src="_js/-ui-052.js"></script>
+    <script type="text/javascript" src="_js/inputs-form.js"></script>
+    <script type="text/javascript" src="_js/toggle-botton.js"></script>
+    <title>ui-052</title>
+    <style>
+        .space{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0px;
+        }
+        .space > div{
+            margin: 5px;
+        }
+        #container-main{
+            position:relative;
+            top: -75px;
+            
+        }
+    
+    </style>
+ 
+
+</head>
+<body id="container-manager">
+
+<div id="container-menu">
+    <div id="container-menu">
+
+        <div class="profile-info"><!--Parte da foto e dados do usuário-->
+            <div class="photo-profile">
+                <img src="" alt="">
+            </div>
+            <p class="name-user">Nome Sobrenome</p>
+            <p>Cargo</p>
+        </div>
+        <nav class="menu-sidebar"><!--Opções do Menu-->
+            <ul>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-043.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                </li>
+
+                <li> 
+                    <li class="item-menu active-item-menu"><i></i><i></i>
+                        <a href="ui-049.html" class="btn"><span class="material-icons-outlined">pin_drop</span> Gerenciar unidade </a>
+                </li>
+
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-051.html"><span class="material-icons">contact_page</span>Gerenciar vacinação</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-053.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="ui-054.html"><span class="material-icons">account_circle</span>Perfil</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+</div>
+
+<div id="container-main">
+ 
+<div id="wrapper-main">
+
+
+
+<section class="space">
+
+<div class="box-container">
+ 
+
+
+</div>
+
+</section>
+<!--ISAAC, O INSANO-->
+<form id="form-vac">
+<section class="space">
+
+    <div class="box-container">
+        <header class="container-header">
+            <h1>Painel Unidade</h1>
+        </header>
+<div class="box-wrapper">
+
+<!-- CONTAINER CABEÇALHO -->
+    <header class="box-header">Dados vacinação</header>
+
+<!-- CONTAINER DO MEIO -->
+<div class="box-middle box-middle-form">
+                        
+    <div class="input-container">
+                        
+        <label for="idvacinaçao">ID vacinação</label>
+        <input type="text" placeholder="123456789" class="input-default" name="idvacinaçao" id="idvacinaçao">
+    </div>
+
+    <div class="input-container">
+        <label for="dose">Dose</label>
+        <input type="text" placeholder="2 Dose" class="input-default" name="dose" id="dose">
+    </div>
+
+    <div class="input-container">
+        <label for="vacina">Vacina</label>
+        <input type="text" placeholder="Coronavac" class="input-default" name="vacina" id="vacina">
+    </div>
+
+    <div class="input-container">
+        <label for="lab">Laboratorio</label>
+        <input type="text" placeholder="Sinovac" class="input-default" name="lab" id="lab">
+    </div>
+
+    <div class="input-container">
+        <label for="dataaplicaçao">Data da Aplicação</label>
+        <input type="date" placeholder="00/00/0000" class="input-default" name="dataaplicaçao" id="dataaplicaçao">
+    </div>
+
+    <div class="input-container">
+        <label for="pais">País de origem</label>
+        <input type="text" placeholder="Brasil" class="input-default" name="pais" id="pais">
+    </div>
+
+    <div class="input-container">
+        <label for="idptnvac">ID Ponto de vacinação</label>
+        <input type="text" placeholder="123456789" class="input-default" name="idptnvac" id="idptnvac">
+    </div>
+
+    <div class="input-container">
+        <label for="pnt-vacinaçao">Ponto de vacinação</label>
+        <input type="text" placeholder="Hospital Pan" class="input-default" name="pntvacinaçao" id="pntvacinaçao">
+    </div>
+
+    <div class="input-container">
+        <label for="n-civa-prof">N CIVA Profissional</label>
+        <input type="text" placeholder="BR5513456789" class="input-default" name="ncivaprof" id="ncivaprof">
+    </div>
+
+    <div class="input-container">
+        <label for="lote">Lote</label>
+        <input type="text" placeholder="45181806" class="input-default" name="lote" id="lote">
+    </div>
+
+
+
+</div>
+
+<!-- CONTAINER INFERIOR BOTOES -->
+    <div class="box-bottom">
+        <div class="toggle-container">
+            <div class="toggle-btn">
+                <div class="inner-circle"></div>
+                <span class="toggle-name">Ativado</span>
+            </div> 
+            </div>
+            
+    </div>
+</div>
+
+ 
+    <div class="box-wrapper">
+        <header class="box-header">Dados Portador</header>
+        <div class="box-middle box-middle-table">
+            <div class="box-middle box-middle-form">
+                            
+                <div class="input-container">
+
+                    <label for="name">Nome completo</label>
+                    <input type="text" placeholder="Maria Souza Almeida" class="input-default" name="name" id="name" value="">
+                </div>
+            
+                <div class="input-container">
+                    <label for="civa">Número CIVA</label>
+                    <input type="text" placeholder="BR5513456789" class="input-default" name="civa" id="civa" value="">
+                </div>
+            
+                <div class="input-container">
+                    <label for="date">Data de nascimento</label>
+                    <input type="date" placeholder="29/07/2021  " class="input-default" name="date" id="date" value="">
+                </div>
+            
+                <div class="input-container">
+                    <label for="ident">Identidade</label>
+                    <input type="text" placeholder="123.456.789.01" class="input-default" name="ident" id="ident" value="">
+                </div>
+            
+                <div class="input-container">
+                    <label for="pais">Endereço</label>
+                    <input type="text" placeholder="Avenida Rio Branco" class="input-default" name="pais" id="pais" value="">
+                </div>
+            
+                <div class="input-container">
+                    <label for="">País de origem</label>
+                    <input type="text" placeholder="Brasil" class="input-default" name="crm" id="crm" value="">
+                </div>
+            
+                <div class="input-container">
+                    <label for="">Email</label>
+                    <input type="text" placeholder="maria@gmail.com" class="input-default" name="mail" id="mail" value="">
+                </div>
+            
+                <div class="input-container">
+                    <label for="contact">Contato</label>
+                    <input type="text" placeholder="5521912345678" class="input-default" name="contact" id="contact" value="">
+                </div>
+            
+
+    </div>
+
+</div>
+
+</section>
+
+<section class="space"> 
+    
+
+     
+
+    <div>
+        <a href="ui-051.html">
+            <button class="btn-default  d-grey" type="button">Voltar</button>
+        </a>
+    </div>
+    
+
+    <div>
+        <button form="form-vac" type="submit" class="btn-default  d-coral">Salvar</button>
+    </div>
+    
+
+</section>
+</form>
+</div> 
+
+
+<script src="js/toggle-botton.js"></script>  
+
+</body>
+</html>

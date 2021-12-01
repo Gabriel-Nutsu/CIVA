@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- ICONES -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <!-- ESTILOS -->
+            
+             <link rel="stylesheet" href="_css/ui-119.css">
+            <link rel="stylesheet" href="_css/style-global.css">
+            
+            
+
+        <!--Adicione ao título o nome da sua página-->
+            <title> Gerenciar País</title>
+
+            <style>
+                .space{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 20px 0px;
+                }
+                .space > div{
+                    margin: 5px;
+                }
+            
+            </style>
+    </head>
+    <body id="container-manager">
+        <div id="container-menu">
+
+            <div class="profile-info"><!--Parte da foto e dados do usuário-->
+                <div class="photo-profile">
+                    <img src="" alt="">
+                </div>
+                <p class="name-user">Nome Sobrenome</p>
+                <p>Cargo</p>
+            </div>
+            <nav class="menu-sidebar"><!--Opções do Menu-->
+                <ul>
+                    <li class="item-menu "><i></i><i></i>
+                        <a href="ui-107.html" ><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                    </li>
+                    <li class="item-menu active-item-menu"><i></i><i></i>
+                        <a href="ui-115.html"><span clas="btn" class="material-icons">flag</span>Gerenciar país</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-120.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-121.html"><span class="material-icons">vaccines</span>Gerenciar vacina</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-123.html"><span class="material-icons">account_circle</span>Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="container-main"><!--Não excluir, pois isso modifica a formatação-->
+        
+        <div id="wrapper-main">
+
+            <header class="container-header">
+                <h3>Painel País</h3>
+            </header>
+
+            <div class="container-middle">
+                <div class="box-wrapper">
+
+                    <!-- CONTAINER CABEÇALHO -->
+                        <header class="box-header">Dados País</header>
+                    
+                    <!-- CONTAINER DO MEIO -->
+
+                    <form id="form1" action="#">
+                    <div class="box-middle box-middle-form">
+                        
+                        <div class="input-container">
+                    
+                            <label for="">ID País</label>
+                            <input type="text" id="idpais" placeholder="120" class="input-default">
+                        </div>
+                    
+                        <div class="input-container">
+                            <label for="">País</label>
+                            <input type="text" id="pais" placeholder="Brasil" class="input-default">
+                        </div>
+                    
+                        <div class="input-container">
+                            <label for="">Orgão de saúde</label>
+                            <input type="text" id="orgao" placeholder="SUS" class="input-default">
+                        </div>
+                    
+                        <div class="input-container">
+                            <label for="">Continente</label>
+                            <input type="text" id="cont" placeholder="America do Sul" class="input-default">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="">Padrão de contato</label>
+                            <input type="text" id="contato" placeholder="10 caracteres" class="input-default">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="">Fuso horário</label>
+                            <input type="text" id="fuso" placeholder="UTC-3" class="input-default">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="">Documentação PC</label>
+                            <input type="text" id="docpc" placeholder="CPF" class="input-default">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="">Documentação PS</label>
+                            <input type="text" id="docps" placeholder="CRM" class="input-default">
+                        </div>
+                    
+                    </div>
+
+                
+                    
+                    <!-- CONTAINER INFERIOR BOTOES -->
+                        <div class="box-bottom">
+                            <div class="toggle-container">
+                                <div class="toggle-btn">
+                                    <div class="inner-circle"></div>
+                                    <span class="toggle-name">Ativado</span>
+                                </div> 
+                                </div>
+                                
+                                <button class="btn-default btn-small d-red">Excluir</button>
+                        </div>
+                    </div>
+            
+                    <script src="js/toggle-botton.js"></script> 
+                    
+            </body>
+
+            <div class="box-wrapper">
+                <header class="box-header">Gestores Vinculados</header>
+                <div class="box-middle box-middle-table">
+                    <table class="table-default">
+                        <tbody><tr>
+                            <th>Nome</th>
+                            <th>Identidade</th>
+                            <th>Numero CIVA</th>
+                            
+                        </tr>
+                        <tr>
+                            <td>Maria Souza da Silva</td>
+                            <td>123.159.875-05</td>
+                            <td>BR5521123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Maria Souza da Silva</td>
+                            <td>123.159.875-05</td>
+                            <td>BR5521123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Maria Souza da Silva</td>
+                            <td>123.159.875-05</td>
+                            <td>BR5521123456789</td>
+                        </tr>
+
+                        <tr>
+                            <td>Maria Souza da Silva</td>
+                            <td>123.159.875-05</td>
+                            <td>BR5521123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Maria Souza da Silva</td>
+                            <td>123.159.875-05</td>
+                            <td>BR5521123456789</td>
+                        </tr>
+                       
+                    </tbody></table>
+                </div>
+            </div>
+
+            <div class="container-bottom">
+                <a href="ui-115.html">
+                    <button type="button" class="btn-default d-grey" id="botão">Voltar</button>
+                </a>
+            
+                <a>
+                    <button form="form1" class="btn-default d-coral">Cadastrar</button>
+                </a>
+
+            </div>
+
+        </form>
+
+            
+
+             
+        </div> 
+        <script src="_js/ui-108.js"></script>
+        <!-- <script src="_js/ui-119_2.js"></script> -->
+    </body>
+</html>

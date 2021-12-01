@@ -1,0 +1,21 @@
+.container-bottom{
+  display: flex;
+  flex-direction: row;
+}
+
+.container-bottom button{
+  margin-right: 30px;
+}
+
+.container-bottom button a{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.d-grey a{
+  color: #606060;
+}
+
+.d-coral a {
+  color: white;
+}

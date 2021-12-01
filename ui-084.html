@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ICONES -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <!-- ESTILOS -->
+            <link rel="stylesheet" href="_css/style-global.css">
+            <link rel="stylesheet" href="_css/ui-084.css">
+            <script type="text/javascript" src="_js/ui-084.js"></script>
+            <script type="text/javascript" src="_js/toggle-botton.js"></script>
+
+        <!--Adicione ao título o nome da sua página-->
+            <title>CIVA - Cadastro Supervisor</title>
+    </head>
+    <body id="container-manager">
+        <div id="container-menu">
+
+            <div class="profile-info"><!--Parte da foto e dados do usuário-->
+                <div class="photo-profile">
+                    <img src="" alt="">
+                </div>
+                <p class="name-user">Nome Sobrenome</p>
+                <p>Cargo</p>
+            </div>
+            <nav class="menu-sidebar"><!--Opções do Menu-->
+                <ul>
+                    <li class="item-menu active-item-menu"><i></i><i></i>
+                        <a href="ui-074.html" class="btn"><span class="material-icons">people_alt</span>Gerenciar usuário</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-093.html"><span class="material-icons">place</span>Gerenciar unidade</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-096.html"><span class="material-icons">contact_page</span>Gerenciar vacinação</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-098.html"><span class="material-icons">assessment</span>Painel relatório</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-099.html"><span class="material-icons">vaccines</span>Gerenciar vacina</a>
+                    </li>
+                    <li class="item-menu"><i></i><i></i>
+                        <a href="ui-102.html"><span class="material-icons">account_circle</span>Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        
+        </div>
+
+        <div id="container-main"> <!--Não excluir, pois isso modifica a formatação-->
+        
+            <div id="wrapper-main">
+
+                <header class="container-header">
+                    <h3>Painel Supervisor</h3>
+                </header>
+
+                <div class="box-container">
+
+                    <div class="box-wrapper">
+                    
+                    <!-- CONTAINER CABEÇALHO -->
+                        <header class="box-header">Dados Supervisor</header>
+                    
+                    <!-- CONTAINER DO MEIO -->
+                    <form id="form-panel-supervisor" class="box-middle box-middle-form">
+                    
+                        <div class="input-container input-tipoGrande">
+                    
+                            <label for="nome">Nome Completo</label>
+                            <input id="nome"type="text" placeholder="Maria Souza Almeida" class="input-default" id="nome">
+                        </div>
+                    
+                        <div class="input-container">
+                            <label for="num-civa">Número Civa</label>
+                            <input id="num-civa"type="text" placeholder="BR5513456789" class="input-default" id="numCiv">
+                        </div>
+                    
+                        <div class="input-container">
+                            <label for="data-de-nascimento">Data de Nascimento</label>
+                            <input id="data-de-nascimento" type="date" class="input-default" id="datNas">
+                        </div>
+                    
+                        <div class="input-container">
+                            <label for="identidade">Identidade</label>
+                            <input id="identidade"type="text" placeholder="123.456.789.01" class="input-default" id="ident">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="pais-de-origem">País de Origem</label>
+                            <input id="pais-de-origem" type="text" placeholder="Brasil" class="input-default" id="pais">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="contato">Contato</label>
+                            <input id="contato" type="number" placeholder="5521912345678" class="input-default" id="contato">
+                        </div>
+                        
+                        <div class="input-container max-width">
+                            <label for="email">Email</label>
+                            <input id="email" type="text" placeholder="maria@gmail.com" class="input-default max-width" id="email">
+                        </div>
+                       
+                    </form>
+                    
+                    <!-- CONTAINER INFERIOR BOTOES -->
+                        <div class="box-bottom">
+                            <div class="toggle-container">
+                                <div class="toggle-btn">
+                                    <div class="inner-circle"></div>
+                                    <span class="toggle-name">Ativado</span>
+                                </div> 
+                                </div>
+                                <a href="ui-085.html"><button class="btn-default btn-small d-grey-out" style="width: initial;">Redefinir senha</button></a>
+                                <button class="btn-default btn-small d-red">Excluir</button>
+                        </div>
+                    </div>
+                    
+                     
+                        <div class="box-wrapper">
+                            <header class="box-header">Unidades Vinculadas</header>
+                            <div class="box-middle box-middle-table">
+                                <table class="table-default">
+                                    <tbody><tr>
+                                        <th>Nome</th>
+                                        <th>Estado</th>
+                                        <th>CP</th>
+                                        <th>Identificador</th>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Hopital Pan</td>
+                                        <td>Rio de Janeiro</td>
+                                        <td>12016-102</td>
+                                        <td>215648</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hopital Pan</td>
+                                        <td>Rio de Janeiro</td>
+                                        <td>12016-102</td>
+                                        <td>215648</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hopital Pan</td>
+                                        <td>Rio de Janeiro</td>
+                                        <td>12016-102</td>
+                                        <td>215648</td>
+                                    </tr>
+                                   
+                                </tbody></table>
+                            </div>
+                           
+                    
+                        </div>
+                    
+                    </div>
+
+                    <!-- PRA CIMA TUDO CERTO -->
+
+                <div class="container-bottom">
+                    <a href="ui-082.html"><button class="btn-default  d-grey">Voltar</button></a> 
+                    <a href="ui-084.html"><button type="submit" form="form-panel-supervisor" class="btn-default  d-coral">Salvar</button></a>
+                </div>  
+</div>
+</div>
+            </div> 
+        </div> 
+        <script src="_js/toggle-botton.js"></script>  
+    </body>
+</html>
